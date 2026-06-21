@@ -1,0 +1,47 @@
+[
+  {
+    "point": "〜たいです",
+    "meaning": "want to do",
+    "example": "日本に行きたいです。",
+    "reading": "にほんにいきたいです。",
+    "translation": "I want to go to Japan.",
+    "note": "Attach たい to the verb stem: 行く → 行きたい.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ながら",
+    "meaning": "while doing",
+    "example": "働きながら、日本語を勉強します。",
+    "reading": "はたらきながら、にほんごをべんきょうします。",
+    "translation": "I study Japanese while working.",
+    "note": "Used when doing two actions at the same time.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ませんか",
+    "meaning": "Would you like to...?",
+    "example": "一緒にラーメンを食べませんか。",
+    "reading": "いっしょにラーメンをたべませんか。",
+    "translation": "Would you like to eat ramen together?",
+    "note": "A polite invitation.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜があります",
+    "meaning": "there is / have for things",
+    "example": "今日は仕事があります。",
+    "reading": "きょうはしごとがあります。",
+    "translation": "I have work today.",
+    "note": "Use あります for things, events, and abstract things like time.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜がいます",
+    "meaning": "there is / have for people and animals",
+    "example": "日本に友達がいます。",
+    "reading": "にほんにともだちがいます。",
+    "translation": "I have a friend in Japan.",
+    "note": "Use います for people and animals.",
+    "jlpt": "N5"
+  }
+]
