@@ -31,7 +31,6 @@ const vocab = [
   { kanji: "今", hiragana: "いま", meaning: "now", type: "noun", sentence: "今、日本語を勉強しています。", reading: "いま、にほんごをべんきょうしています。", translation: "I am studying Japanese now." }
 ];
   }
-];
 
 const grammar = [
   {
