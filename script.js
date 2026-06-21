@@ -1,57 +1,35 @@
 const vocab = [
-  {
-    kanji: "食べる",
-    hiragana: "たべる",
-    meaning: "to eat",
-    type: "verb",
-    sentence: "私は毎日ご飯を食べます。",
-    reading: "わたしはまいにちごはんをたべます。",
-    translation: "I eat rice/a meal every day."
-  },
-  {
-    kanji: "行く",
-    hiragana: "いく",
-    meaning: "to go",
-    type: "verb",
-    sentence: "明日、仕事に行きます。",
-    reading: "あした、しごとにいきます。",
-    translation: "Tomorrow, I will go to work."
-  },
-  {
-    kanji: "見る",
-    hiragana: "みる",
-    meaning: "to see / to watch",
-    type: "verb",
-    sentence: "仕事の後でテレビを見ます。",
-    reading: "しごとのあとでテレビをみます。",
-    translation: "I watch TV after work."
-  },
-  {
-    kanji: "駅",
-    hiragana: "えき",
-    meaning: "station",
-    type: "noun",
-    sentence: "駅まで歩きます。",
-    reading: "えきまであるきます。",
-    translation: "I walk to the station."
-  },
-  {
-    kanji: "今日",
-    hiragana: "きょう",
-    meaning: "today",
-    type: "noun",
-    sentence: "今日は日本語を勉強します。",
-    reading: "きょうはにほんごをべんきょうします。",
-    translation: "Today I will study Japanese."
-  },
-  {
-    kanji: "仕事",
-    hiragana: "しごと",
-    meaning: "work / job",
-    type: "noun",
-    sentence: "今日は仕事があります。",
-    reading: "きょうはしごとがあります。",
-    translation: "I have work today."
+  { kanji: "食べる", hiragana: "たべる", meaning: "to eat", type: "verb", sentence: "私は毎日ご飯を食べます。", reading: "わたしはまいにちごはんをたべます。", translation: "I eat rice/a meal every day." },
+  { kanji: "行く", hiragana: "いく", meaning: "to go", type: "verb", sentence: "明日、仕事に行きます。", reading: "あした、しごとにいきます。", translation: "Tomorrow, I will go to work." },
+  { kanji: "見る", hiragana: "みる", meaning: "to see / to watch", type: "verb", sentence: "仕事の後でテレビを見ます。", reading: "しごとのあとでテレビをみます。", translation: "I watch TV after work." },
+  { kanji: "駅", hiragana: "えき", meaning: "station", type: "noun", sentence: "駅まで歩きます。", reading: "えきまであるきます。", translation: "I walk to the station." },
+  { kanji: "今日", hiragana: "きょう", meaning: "today", type: "noun", sentence: "今日は日本語を勉強します。", reading: "きょうはにほんごをべんきょうします。", translation: "Today I will study Japanese." },
+  { kanji: "仕事", hiragana: "しごと", meaning: "work / job", type: "noun", sentence: "今日は仕事があります。", reading: "きょうはしごとがあります。", translation: "I have work today." },
+
+  { kanji: "飲む", hiragana: "のむ", meaning: "to drink", type: "verb", sentence: "水を飲みます。", reading: "みずをのみます。", translation: "I drink water." },
+  { kanji: "話す", hiragana: "はなす", meaning: "to speak / to talk", type: "verb", sentence: "日本語を少し話します。", reading: "にほんごをすこしはなします。", translation: "I speak a little Japanese." },
+  { kanji: "聞く", hiragana: "きく", meaning: "to listen / to ask", type: "verb", sentence: "先生に聞きます。", reading: "せんせいにききます。", translation: "I ask the teacher." },
+  { kanji: "読む", hiragana: "よむ", meaning: "to read", type: "verb", sentence: "本を読みます。", reading: "ほんをよみます。", translation: "I read a book." },
+  { kanji: "書く", hiragana: "かく", meaning: "to write", type: "verb", sentence: "日本語を書きます。", reading: "にほんごをかきます。", translation: "I write Japanese." },
+
+  { kanji: "水", hiragana: "みず", meaning: "water", type: "noun", sentence: "水をください。", reading: "みずをください。", translation: "Water, please." },
+  { kanji: "本", hiragana: "ほん", meaning: "book", type: "noun", sentence: "これは日本語の本です。", reading: "これはにほんごのほんです。", translation: "This is a Japanese book." },
+  { kanji: "先生", hiragana: "せんせい", meaning: "teacher", type: "noun", sentence: "先生はやさしいです。", reading: "せんせいはやさしいです。", translation: "The teacher is kind." },
+  { kanji: "友達", hiragana: "ともだち", meaning: "friend", type: "noun", sentence: "日本に友達がいます。", reading: "にほんにともだちがいます。", translation: "I have a friend in Japan." },
+  { kanji: "家", hiragana: "いえ", meaning: "house / home", type: "noun", sentence: "家に帰ります。", reading: "いえにかえります。", translation: "I go home." },
+
+  { kanji: "帰る", hiragana: "かえる", meaning: "to return / to go home", type: "verb", sentence: "午後十一時に帰ります。", reading: "ごごじゅういちじにかえります。", translation: "I go home at 11 PM." },
+  { kanji: "来る", hiragana: "くる", meaning: "to come", type: "verb", sentence: "友達が来ます。", reading: "ともだちがきます。", translation: "My friend comes." },
+  { kanji: "寝る", hiragana: "ねる", meaning: "to sleep", type: "verb", sentence: "今日は早く寝ます。", reading: "きょうははやくねます。", translation: "I will sleep early today." },
+  { kanji: "起きる", hiragana: "おきる", meaning: "to wake up / to get up", type: "verb", sentence: "朝十時に起きます。", reading: "あさじゅうじにおきます。", translation: "I wake up at 10 AM." },
+  { kanji: "買う", hiragana: "かう", meaning: "to buy", type: "verb", sentence: "コンビニで水を買います。", reading: "コンビニでみずをかいます。", translation: "I buy water at the convenience store." },
+
+  { kanji: "日本", hiragana: "にほん", meaning: "Japan", type: "noun", sentence: "日本に行きたいです。", reading: "にほんにいきたいです。", translation: "I want to go to Japan." },
+  { kanji: "日本語", hiragana: "にほんご", meaning: "Japanese language", type: "noun", sentence: "日本語は楽しいです。", reading: "にほんごはたのしいです。", translation: "Japanese is fun." },
+  { kanji: "学校", hiragana: "がっこう", meaning: "school", type: "noun", sentence: "学校で日本語を勉強します。", reading: "がっこうでにほんごをべんきょうします。", translation: "I study Japanese at school." },
+  { kanji: "時間", hiragana: "じかん", meaning: "time", type: "noun", sentence: "今日は時間があります。", reading: "きょうはじかんがあります。", translation: "I have time today." },
+  { kanji: "今", hiragana: "いま", meaning: "now", type: "noun", sentence: "今、日本語を勉強しています。", reading: "いま、にほんごをべんきょうしています。", translation: "I am studying Japanese now." }
+];
   }
 ];
 
