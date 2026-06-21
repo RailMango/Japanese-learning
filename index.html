@@ -15,19 +15,12 @@
     header {
       background: linear-gradient(135deg, #111827, #374151);
       color: white;
-      padding: 28px 18px;
+      padding: 30px 18px;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin-top: 8px;
-      color: #d1d5db;
-    }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin-top: 8px; color: #d1d5db; }
 
     nav {
       display: flex;
@@ -39,6 +32,7 @@
       position: sticky;
       top: 0;
       box-shadow: 0 2px 8px #0001;
+      z-index: 10;
     }
 
     button {
@@ -47,17 +41,16 @@
       padding: 10px 15px;
       cursor: pointer;
       background: #e5e7eb;
-      font-weight: 600;
+      font-weight: 700;
     }
 
-    button.active,
-    button:hover {
+    button.active, button:hover {
       background: #111827;
       color: white;
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 24px auto;
       padding: 0 16px;
     }
@@ -71,26 +64,21 @@
 
     .card {
       background: white;
-      border-radius: 16px;
+      border-radius: 18px;
       padding: 18px;
       margin-bottom: 14px;
       box-shadow: 0 3px 10px #0001;
     }
 
-    .big {
-      font-size: 2rem;
-      font-weight: 800;
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #eef2ff);
+      border: 1px solid #e0e7ff;
     }
 
-    .jp {
-      font-size: 1.6rem;
-      font-weight: 800;
-    }
-
-    .reading {
-      color: #6b7280;
-      margin-top: 4px;
-    }
+    .big { font-size: 2rem; font-weight: 900; }
+    .jp { font-size: 1.65rem; font-weight: 900; }
+    .reading { color: #6b7280; margin-top: 4px; }
+    .small { color: #6b7280; font-size: 0.92rem; }
 
     input {
       width: 100%;
@@ -110,16 +98,44 @@
       border-radius: 999px;
       font-size: 0.8rem;
       margin-top: 8px;
+      font-weight: 700;
     }
 
-    .study-btn {
-      margin-top: 10px;
-      margin-right: 8px;
+    .mission-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
     }
 
-    .small {
-      color: #6b7280;
-      font-size: 0.9rem;
+    .mission-item:last-child { border-bottom: none; }
+
+    .check {
+      font-size: 1.3rem;
+    }
+
+    .study-link {
+      width: 100%;
+      text-align: left;
+      border-radius: 14px;
+      background: #f3f4f6;
+      margin-top: 8px;
+    }
+
+    .study-link:hover {
+      background: #111827;
+      color: white;
+    }
+
+    .danger {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .success {
+      background: #dcfce7;
+      color: #166534;
     }
   </style>
 </head>
@@ -127,11 +143,12 @@
 <body>
   <header>
     <h1>日本語 Study Hub</h1>
-    <p>David's daily JLPT N5 study dashboard</p>
+    <p>Daily Mission + Free Study Portal</p>
   </header>
 
   <nav>
     <button class="active" onclick="showSection('home', this)">Home</button>
+    <button onclick="showSection('mission', this)">Daily Mission</button>
     <button onclick="showSection('vocab', this)">Vocabulary</button>
     <button onclick="showSection('grammar', this)">Grammar</button>
     <button onclick="showSection('kanji', this)">Kanji</button>
@@ -251,8 +268,24 @@
       render();
     }
 
+    function go(section) {
+      current = section;
+      document.querySelectorAll("nav button").forEach(b => {
+        b.classList.toggle("active", b.textContent.toLowerCase().includes(section));
+      });
+      document.getElementById("search").style.display =
+        ["vocab", "grammar", "kanji"].includes(section) ? "block" : "none";
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
     function markTodayDone() {
       localStorage.setItem("studyDone", "yes");
+      render();
+    }
+
+    function resetToday() {
+      localStorage.removeItem("studyDone");
       render();
     }
 
@@ -267,47 +300,96 @@
       render();
     }
 
+    function renderMission() {
+      return `
+        <div class="card hero">
+          <h2>今日のミッション — Today’s Mission</h2>
+          <p>This is your recommended minimum. Finish it, then study freely as much as you want.</p>
+
+          <div class="mission-item">
+            <div class="check">①</div>
+            <div>
+              <b>Learn 3 vocabulary words</b>
+              <p class="small">Read the word, reading, meaning, and example sentence out loud.</p>
+            </div>
+          </div>
+
+          <div class="mission-item">
+            <div class="check">②</div>
+            <div>
+              <b>Review 1 grammar point</b>
+              <p class="small">Make one original sentence with it.</p>
+            </div>
+          </div>
+
+          <div class="mission-item">
+            <div class="check">③</div>
+            <div>
+              <b>Do 5 flashcards</b>
+              <p class="small">Say the answer before flipping the card.</p>
+            </div>
+          </div>
+
+          <div class="mission-item">
+            <div class="check">④</div>
+            <div>
+              <b>Write 1 journal sentence</b>
+              <p class="small">Keep it simple. Example: 今日は仕事があります。</p>
+            </div>
+          </div>
+
+          <button onclick="markTodayDone()">Mark Mission Complete</button>
+          <button class="danger" onclick="resetToday()">Reset</button>
+        </div>
+      `;
+    }
+
     function render() {
       const q = document.getElementById("search").value.toLowerCase();
       const content = document.getElementById("content");
       const studyDone = localStorage.getItem("studyDone") === "yes";
 
       if (current === "home") {
-        const todayWords = vocab.slice(0, 3);
-
         content.innerHTML = `
+          <div class="card hero">
+            <div class="big">${studyDone ? "✅" : "🔥"}</div>
+            <h2>Welcome back, David-san</h2>
+            <p><b>Status:</b> ${studyDone ? "Daily mission complete." : "Daily mission not complete yet."}</p>
+            <p>The mission gives you structure. Free Study lets you explore and grind whenever you want.</p>
+          </div>
+
           <div class="grid">
             <div class="card">
-              <div class="big">${studyDone ? "✅" : "🔥"}</div>
-              <h2>Today’s Study</h2>
-              <p>${studyDone ? "Done for today. Nice work." : "Not done yet. Keep it simple."}</p>
-              <button class="study-btn" onclick="markTodayDone()">Mark Today Complete</button>
+              <h2>Daily Mission</h2>
+              <p class="small">Recommended path for today.</p>
+              <button class="study-link" onclick="go('mission')">Start Mission</button>
             </div>
 
             <div class="card">
-              <div class="big">${vocab.length}</div>
-              <h2>Vocabulary Words</h2>
-              <p class="small">Current N5 words in your site.</p>
+              <h2>Free Study</h2>
+              <p class="small">Choose anything. No limits.</p>
+              <button class="study-link" onclick="go('vocab')">Vocabulary</button>
+              <button class="study-link" onclick="go('grammar')">Grammar</button>
+              <button class="study-link" onclick="go('kanji')">Kanji</button>
+              <button class="study-link" onclick="go('flashcards')">Flashcards</button>
+              <button class="study-link" onclick="go('quiz')">Quiz</button>
+              <button class="study-link" onclick="go('journal')">Journal</button>
             </div>
 
             <div class="card">
-              <div class="big">${grammar.length}</div>
-              <h2>Grammar Points</h2>
-              <p class="small">Current N5 grammar points.</p>
-            </div>
-
-            <div class="card">
-              <div class="big">${kanji.length}</div>
-              <h2>Kanji</h2>
-              <p class="small">Current kanji entries.</p>
+              <h2>Current Database</h2>
+              <p><b>${vocab.length}</b> vocabulary words</p>
+              <p><b>${grammar.length}</b> grammar points</p>
+              <p><b>${kanji.length}</b> kanji</p>
             </div>
           </div>
 
           <h2>Today’s 3 Words</h2>
-          ${todayWords.map(v => `
+          ${vocab.slice(0, 3).map(v => `
             <div class="card">
               <div class="jp">${v.kanji}</div>
               <div class="reading">${v.hiragana}</div>
+              <span class="tag">${v.type}</span>
               <p><b>${v.meaning}</b></p>
               <p>${v.sentence}</p>
               <p class="reading">${v.reading}</p>
@@ -315,6 +397,10 @@
             </div>
           `).join("")}
         `;
+      }
+
+      if (current === "mission") {
+        content.innerHTML = renderMission();
       }
 
       if (current === "vocab") {
@@ -379,8 +465,8 @@
               <p class="small">Try to remember the meaning before flipping.</p>
             `}
 
-            <button class="study-btn" onclick="flipFlashcard()">Flip</button>
-            <button class="study-btn" onclick="nextFlashcard()">Next</button>
+            <button onclick="flipFlashcard()">Flip</button>
+            <button onclick="nextFlashcard()">Next</button>
           </div>
         `;
       }
@@ -390,7 +476,7 @@
           <div class="card">
             <h2>Mini Quiz</h2>
             <p><b>Question:</b> What does <span class="jp">仕事</span> mean?</p>
-            <button onclick="alert('Not quite. 仕事 means work/job.')">station</button>
+            <button onclick="alert('Not quite. 駅 means station.')">station</button>
             <button onclick="alert('Correct! 仕事 means work/job.')">work / job</button>
             <button onclick="alert('Not quite. 食べる means to eat.')">to eat</button>
             <button onclick="alert('Not quite. 今日 means today.')">today</button>
@@ -402,7 +488,8 @@
         content.innerHTML = `
           <div class="card">
             <h2>Japanese Journal</h2>
-            <p>Use this section for simple daily Japanese sentences.</p>
+            <p>Write one simple sentence per day. Start small. Accuracy first.</p>
+
             <p class="jp">今日は仕事があります。</p>
             <p class="reading">きょうはしごとがあります。</p>
             <p>I have work today.</p>
@@ -410,6 +497,10 @@
             <p class="jp">仕事の後で日本語を勉強します。</p>
             <p class="reading">しごとのあとでにほんごをべんきょうします。</p>
             <p>After work, I will study Japanese.</p>
+
+            <p class="jp">明日、日本語をもっと勉強したいです。</p>
+            <p class="reading">あした、にほんごをもっとべんきょうしたいです。</p>
+            <p>Tomorrow, I want to study Japanese more.</p>
           </div>
         `;
       }
