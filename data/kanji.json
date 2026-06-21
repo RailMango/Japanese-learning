@@ -1,0 +1,62 @@
+[
+  {
+    "kanji": "日",
+    "reading": "にち / ひ",
+    "meaning": "day, sun",
+    "example": "日本"
+  },
+  {
+    "kanji": "本",
+    "reading": "ほん",
+    "meaning": "book, origin",
+    "example": "日本"
+  },
+  {
+    "kanji": "人",
+    "reading": "じん / ひと",
+    "meaning": "person",
+    "example": "日本人"
+  },
+  {
+    "kanji": "語",
+    "reading": "ご",
+    "meaning": "language",
+    "example": "日本語"
+  },
+  {
+    "kanji": "食",
+    "reading": "た / しょく",
+    "meaning": "eat, food",
+    "example": "食べる"
+  },
+  {
+    "kanji": "飲",
+    "reading": "の / いん",
+    "meaning": "drink",
+    "example": "飲む"
+  },
+  {
+    "kanji": "行",
+    "reading": "い / こう",
+    "meaning": "go",
+    "example": "行く"
+  },
+  {
+    "kanji": "見",
+    "reading": "み / けん",
+    "meaning": "see",
+    "example": "見る"
+  },
+  {
+    "kanji": "聞",
+    "reading": "き / ぶん",
+    "meaning": "hear, ask",
+    "example": "聞く"
+  },
+  {
+    "kanji": "書",
+    "reading": "か / しょ",
+    "meaning": "write",
+    "example": "書く"
+  }
+]
