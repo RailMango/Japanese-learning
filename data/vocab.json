@@ -1,0 +1,1052 @@
+[
+  {
+    "kanji": "食べる",
+    "hiragana": "たべる",
+    "meaning": "to eat",
+    "type": "verb",
+    "sentence": "私は毎日ご飯を食べます。",
+    "reading": "わたしはまいにちごはんをたべます。",
+    "translation": "I eat rice/a meal every day.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "飲む",
+    "hiragana": "のむ",
+    "meaning": "to drink",
+    "type": "verb",
+    "sentence": "水を飲みます。",
+    "reading": "みずをのみます。",
+    "translation": "I drink water.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "行く",
+    "hiragana": "いく",
+    "meaning": "to go",
+    "type": "verb",
+    "sentence": "明日、仕事に行きます。",
+    "reading": "あした、しごとにいきます。",
+    "translation": "Tomorrow, I will go to work.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "来る",
+    "hiragana": "くる",
+    "meaning": "to come",
+    "type": "verb",
+    "sentence": "友達が来ます。",
+    "reading": "ともだちがきます。",
+    "translation": "My friend comes.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "帰る",
+    "hiragana": "かえる",
+    "meaning": "to return / to go home",
+    "type": "verb",
+    "sentence": "午後十一時に帰ります。",
+    "reading": "ごごじゅういちじにかえります。",
+    "translation": "I go home at 11 PM.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "見る",
+    "hiragana": "みる",
+    "meaning": "to see / to watch",
+    "type": "verb",
+    "sentence": "仕事の後でテレビを見ます。",
+    "reading": "しごとのあとでテレビをみます。",
+    "translation": "I watch TV after work.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "聞く",
+    "hiragana": "きく",
+    "meaning": "to listen / to ask",
+    "type": "verb",
+    "sentence": "先生に聞きます。",
+    "reading": "せんせいにききます。",
+    "translation": "I ask the teacher.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "話す",
+    "hiragana": "はなす",
+    "meaning": "to speak / to talk",
+    "type": "verb",
+    "sentence": "日本語を少し話します。",
+    "reading": "にほんごをすこしはなします。",
+    "translation": "I speak a little Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "読む",
+    "hiragana": "よむ",
+    "meaning": "to read",
+    "type": "verb",
+    "sentence": "本を読みます。",
+    "reading": "ほんをよみます。",
+    "translation": "I read a book.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "書く",
+    "hiragana": "かく",
+    "meaning": "to write",
+    "type": "verb",
+    "sentence": "日本語を書きます。",
+    "reading": "にほんごをかきます。",
+    "translation": "I write Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "買う",
+    "hiragana": "かう",
+    "meaning": "to buy",
+    "type": "verb",
+    "sentence": "コンビニで水を買います。",
+    "reading": "コンビニでみずをかいます。",
+    "translation": "I buy water at the convenience store.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "寝る",
+    "hiragana": "ねる",
+    "meaning": "to sleep",
+    "type": "verb",
+    "sentence": "今日は早く寝ます。",
+    "reading": "きょうははやくねます。",
+    "translation": "I will sleep early today.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "起きる",
+    "hiragana": "おきる",
+    "meaning": "to wake up / to get up",
+    "type": "verb",
+    "sentence": "朝十時に起きます。",
+    "reading": "あさじゅうじにおきます。",
+    "translation": "I wake up at 10 AM.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "働く",
+    "hiragana": "はたらく",
+    "meaning": "to work",
+    "type": "verb",
+    "sentence": "ホテルで働きます。",
+    "reading": "ホテルではたらきます。",
+    "translation": "I work at a hotel.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "勉強する",
+    "hiragana": "べんきょうする",
+    "meaning": "to study",
+    "type": "verb",
+    "sentence": "日本語を勉強します。",
+    "reading": "にほんごをべんきょうします。",
+    "translation": "I study Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "する",
+    "hiragana": "する",
+    "meaning": "to do",
+    "type": "verb",
+    "sentence": "今日、何をしますか。",
+    "reading": "きょう、なにをしますか。",
+    "translation": "What will you do today?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "ある",
+    "hiragana": "ある",
+    "meaning": "to exist / to have (things)",
+    "type": "verb",
+    "sentence": "時間があります。",
+    "reading": "じかんがあります。",
+    "translation": "I have time.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "いる",
+    "hiragana": "いる",
+    "meaning": "to exist / to be (people/animals)",
+    "type": "verb",
+    "sentence": "日本に友達がいます。",
+    "reading": "にほんにともだちがいます。",
+    "translation": "I have a friend in Japan.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "会う",
+    "hiragana": "あう",
+    "meaning": "to meet",
+    "type": "verb",
+    "sentence": "友達に会います。",
+    "reading": "ともだちにあいます。",
+    "translation": "I meet my friend.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "使う",
+    "hiragana": "つかう",
+    "meaning": "to use",
+    "type": "verb",
+    "sentence": "日本語を使います。",
+    "reading": "にほんごをつかいます。",
+    "translation": "I use Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "入る",
+    "hiragana": "はいる",
+    "meaning": "to enter",
+    "type": "verb",
+    "sentence": "店に入ります。",
+    "reading": "みせにはいります。",
+    "translation": "I enter the shop.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "出る",
+    "hiragana": "でる",
+    "meaning": "to leave / to go out",
+    "type": "verb",
+    "sentence": "家を出ます。",
+    "reading": "いえをでます。",
+    "translation": "I leave the house.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "待つ",
+    "hiragana": "まつ",
+    "meaning": "to wait",
+    "type": "verb",
+    "sentence": "駅で待ちます。",
+    "reading": "えきでまちます。",
+    "translation": "I wait at the station.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "歩く",
+    "hiragana": "あるく",
+    "meaning": "to walk",
+    "type": "verb",
+    "sentence": "駅まで歩きます。",
+    "reading": "えきまであるきます。",
+    "translation": "I walk to the station.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "走る",
+    "hiragana": "はしる",
+    "meaning": "to run",
+    "type": "verb",
+    "sentence": "公園で走ります。",
+    "reading": "こうえんではしります。",
+    "translation": "I run in the park.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "乗る",
+    "hiragana": "のる",
+    "meaning": "to ride / to get on",
+    "type": "verb",
+    "sentence": "電車に乗ります。",
+    "reading": "でんしゃにのります。",
+    "translation": "I get on the train.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "降りる",
+    "hiragana": "おりる",
+    "meaning": "to get off",
+    "type": "verb",
+    "sentence": "次の駅で降ります。",
+    "reading": "つぎのえきでおります。",
+    "translation": "I get off at the next station.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "言う",
+    "hiragana": "いう",
+    "meaning": "to say",
+    "type": "verb",
+    "sentence": "日本語で言います。",
+    "reading": "にほんごでいいます。",
+    "translation": "I say it in Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "分かる",
+    "hiragana": "わかる",
+    "meaning": "to understand",
+    "type": "verb",
+    "sentence": "少し分かります。",
+    "reading": "すこしわかります。",
+    "translation": "I understand a little.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "忘れる",
+    "hiragana": "わすれる",
+    "meaning": "to forget",
+    "type": "verb",
+    "sentence": "単語を忘れました。",
+    "reading": "たんごをわすれました。",
+    "translation": "I forgot the word.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "日本",
+    "hiragana": "にほん",
+    "meaning": "Japan",
+    "type": "noun",
+    "sentence": "日本に行きたいです。",
+    "reading": "にほんにいきたいです。",
+    "translation": "I want to go to Japan.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "日本語",
+    "hiragana": "にほんご",
+    "meaning": "Japanese language",
+    "type": "noun",
+    "sentence": "日本語は楽しいです。",
+    "reading": "にほんごはたのしいです。",
+    "translation": "Japanese is fun.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "人",
+    "hiragana": "ひと",
+    "meaning": "person",
+    "type": "noun",
+    "sentence": "あの人は先生です。",
+    "reading": "あのひとはせんせいです。",
+    "translation": "That person is a teacher.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "日本人",
+    "hiragana": "にほんじん",
+    "meaning": "Japanese person",
+    "type": "noun",
+    "sentence": "日本人の友達がいます。",
+    "reading": "にほんじんのともだちがいます。",
+    "translation": "I have a Japanese friend.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "先生",
+    "hiragana": "せんせい",
+    "meaning": "teacher",
+    "type": "noun",
+    "sentence": "先生はやさしいです。",
+    "reading": "せんせいはやさしいです。",
+    "translation": "The teacher is kind.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "学生",
+    "hiragana": "がくせい",
+    "meaning": "student",
+    "type": "noun",
+    "sentence": "私は学生ではありません。",
+    "reading": "わたしはがくせいではありません。",
+    "translation": "I am not a student.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "友達",
+    "hiragana": "ともだち",
+    "meaning": "friend",
+    "type": "noun",
+    "sentence": "友達と話します。",
+    "reading": "ともだちとはなします。",
+    "translation": "I talk with my friend.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "家",
+    "hiragana": "いえ",
+    "meaning": "house / home",
+    "type": "noun",
+    "sentence": "家に帰ります。",
+    "reading": "いえにかえります。",
+    "translation": "I go home.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "学校",
+    "hiragana": "がっこう",
+    "meaning": "school",
+    "type": "noun",
+    "sentence": "学校で日本語を勉強します。",
+    "reading": "がっこうでにほんごをべんきょうします。",
+    "translation": "I study Japanese at school.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "駅",
+    "hiragana": "えき",
+    "meaning": "station",
+    "type": "noun",
+    "sentence": "駅はどこですか。",
+    "reading": "えきはどこですか。",
+    "translation": "Where is the station?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "店",
+    "hiragana": "みせ",
+    "meaning": "shop / store",
+    "type": "noun",
+    "sentence": "この店は小さいです。",
+    "reading": "このみせはちいさいです。",
+    "translation": "This shop is small.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "会社",
+    "hiragana": "かいしゃ",
+    "meaning": "company",
+    "type": "noun",
+    "sentence": "会社に行きます。",
+    "reading": "かいしゃにいきます。",
+    "translation": "I go to the company.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "仕事",
+    "hiragana": "しごと",
+    "meaning": "work / job",
+    "type": "noun",
+    "sentence": "今日は仕事があります。",
+    "reading": "きょうはしごとがあります。",
+    "translation": "I have work today.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "時間",
+    "hiragana": "じかん",
+    "meaning": "time",
+    "type": "noun",
+    "sentence": "今日は時間があります。",
+    "reading": "きょうはじかんがあります。",
+    "translation": "I have time today.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "今日",
+    "hiragana": "きょう",
+    "meaning": "today",
+    "type": "noun",
+    "sentence": "今日は日本語を勉強します。",
+    "reading": "きょうはにほんごをべんきょうします。",
+    "translation": "Today I will study Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "明日",
+    "hiragana": "あした",
+    "meaning": "tomorrow",
+    "type": "noun",
+    "sentence": "明日、仕事に行きます。",
+    "reading": "あした、しごとにいきます。",
+    "translation": "Tomorrow, I will go to work.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "昨日",
+    "hiragana": "きのう",
+    "meaning": "yesterday",
+    "type": "noun",
+    "sentence": "昨日、ラーメンを食べました。",
+    "reading": "きのう、ラーメンをたべました。",
+    "translation": "Yesterday, I ate ramen.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "今",
+    "hiragana": "いま",
+    "meaning": "now",
+    "type": "noun",
+    "sentence": "今、日本語を勉強しています。",
+    "reading": "いま、にほんごをべんきょうしています。",
+    "translation": "I am studying Japanese now.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "朝",
+    "hiragana": "あさ",
+    "meaning": "morning",
+    "type": "noun",
+    "sentence": "朝、コーヒーを飲みます。",
+    "reading": "あさ、コーヒーをのみます。",
+    "translation": "In the morning, I drink coffee.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "昼",
+    "hiragana": "ひる",
+    "meaning": "noon / daytime",
+    "type": "noun",
+    "sentence": "昼にご飯を食べます。",
+    "reading": "ひるにごはんをたべます。",
+    "translation": "I eat lunch at noon.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "夜",
+    "hiragana": "よる",
+    "meaning": "night",
+    "type": "noun",
+    "sentence": "夜、日本語を勉強します。",
+    "reading": "よる、にほんごをべんきょうします。",
+    "translation": "At night, I study Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "毎日",
+    "hiragana": "まいにち",
+    "meaning": "every day",
+    "type": "noun",
+    "sentence": "毎日、日本語を勉強します。",
+    "reading": "まいにち、にほんごをべんきょうします。",
+    "translation": "I study Japanese every day.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "毎週",
+    "hiragana": "まいしゅう",
+    "meaning": "every week",
+    "type": "noun",
+    "sentence": "毎週、レッスンがあります。",
+    "reading": "まいしゅう、レッスンがあります。",
+    "translation": "I have a lesson every week.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "水",
+    "hiragana": "みず",
+    "meaning": "water",
+    "type": "noun",
+    "sentence": "水をください。",
+    "reading": "みずをください。",
+    "translation": "Water, please.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "ご飯",
+    "hiragana": "ごはん",
+    "meaning": "rice / meal",
+    "type": "noun",
+    "sentence": "ご飯を食べます。",
+    "reading": "ごはんをたべます。",
+    "translation": "I eat a meal.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "肉",
+    "hiragana": "にく",
+    "meaning": "meat",
+    "type": "noun",
+    "sentence": "肉を食べます。",
+    "reading": "にくをたべます。",
+    "translation": "I eat meat.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "魚",
+    "hiragana": "さかな",
+    "meaning": "fish",
+    "type": "noun",
+    "sentence": "魚が好きです。",
+    "reading": "さかながすきです。",
+    "translation": "I like fish.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "野菜",
+    "hiragana": "やさい",
+    "meaning": "vegetable",
+    "type": "noun",
+    "sentence": "野菜を食べます。",
+    "reading": "やさいをたべます。",
+    "translation": "I eat vegetables.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "果物",
+    "hiragana": "くだもの",
+    "meaning": "fruit",
+    "type": "noun",
+    "sentence": "果物が好きです。",
+    "reading": "くだものがすきです。",
+    "translation": "I like fruit.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "お茶",
+    "hiragana": "おちゃ",
+    "meaning": "tea",
+    "type": "noun",
+    "sentence": "お茶を飲みます。",
+    "reading": "おちゃをのみます。",
+    "translation": "I drink tea.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "コーヒー",
+    "hiragana": "コーヒー",
+    "meaning": "coffee",
+    "type": "noun",
+    "sentence": "朝、コーヒーを飲みます。",
+    "reading": "あさ、コーヒーをのみます。",
+    "translation": "In the morning, I drink coffee.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "本",
+    "hiragana": "ほん",
+    "meaning": "book",
+    "type": "noun",
+    "sentence": "これは日本語の本です。",
+    "reading": "これはにほんごのほんです。",
+    "translation": "This is a Japanese book.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "新聞",
+    "hiragana": "しんぶん",
+    "meaning": "newspaper",
+    "type": "noun",
+    "sentence": "新聞を読みます。",
+    "reading": "しんぶんをよみます。",
+    "translation": "I read a newspaper.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "車",
+    "hiragana": "くるま",
+    "meaning": "car",
+    "type": "noun",
+    "sentence": "車があります。",
+    "reading": "くるまがあります。",
+    "translation": "I have a car.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "電車",
+    "hiragana": "でんしゃ",
+    "meaning": "train",
+    "type": "noun",
+    "sentence": "電車に乗ります。",
+    "reading": "でんしゃにのります。",
+    "translation": "I ride the train.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "バス",
+    "hiragana": "バス",
+    "meaning": "bus",
+    "type": "noun",
+    "sentence": "バスで行きます。",
+    "reading": "バスでいきます。",
+    "translation": "I go by bus.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "自転車",
+    "hiragana": "じてんしゃ",
+    "meaning": "bicycle",
+    "type": "noun",
+    "sentence": "自転車で行きます。",
+    "reading": "じてんしゃでいきます。",
+    "translation": "I go by bicycle.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "部屋",
+    "hiragana": "へや",
+    "meaning": "room",
+    "type": "noun",
+    "sentence": "私の部屋は小さいです。",
+    "reading": "わたしのへやはちいさいです。",
+    "translation": "My room is small.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "机",
+    "hiragana": "つくえ",
+    "meaning": "desk",
+    "type": "noun",
+    "sentence": "机の上に本があります。",
+    "reading": "つくえのうえにほんがあります。",
+    "translation": "There is a book on the desk.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "椅子",
+    "hiragana": "いす",
+    "meaning": "chair",
+    "type": "noun",
+    "sentence": "椅子に座ります。",
+    "reading": "いすにすわります。",
+    "translation": "I sit on the chair.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "上",
+    "hiragana": "うえ",
+    "meaning": "above / on",
+    "type": "noun",
+    "sentence": "本は机の上にあります。",
+    "reading": "ほんはつくえのうえにあります。",
+    "translation": "The book is on the desk.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "下",
+    "hiragana": "した",
+    "meaning": "below / under",
+    "type": "noun",
+    "sentence": "猫は机の下にいます。",
+    "reading": "ねこはつくえのしたにいます。",
+    "translation": "The cat is under the desk.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "中",
+    "hiragana": "なか",
+    "meaning": "inside",
+    "type": "noun",
+    "sentence": "かばんの中に本があります。",
+    "reading": "かばんのなかにほんがあります。",
+    "translation": "There is a book inside the bag.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "前",
+    "hiragana": "まえ",
+    "meaning": "front / before",
+    "type": "noun",
+    "sentence": "駅の前で待ちます。",
+    "reading": "えきのまえでまちます。",
+    "translation": "I wait in front of the station.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "後ろ",
+    "hiragana": "うしろ",
+    "meaning": "behind",
+    "type": "noun",
+    "sentence": "店の後ろに車があります。",
+    "reading": "みせのうしろにくるまがあります。",
+    "translation": "There is a car behind the shop.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "右",
+    "hiragana": "みぎ",
+    "meaning": "right",
+    "type": "noun",
+    "sentence": "右に行きます。",
+    "reading": "みぎにいきます。",
+    "translation": "I go right.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "左",
+    "hiragana": "ひだり",
+    "meaning": "left",
+    "type": "noun",
+    "sentence": "左に行きます。",
+    "reading": "ひだりにいきます。",
+    "translation": "I go left.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "名前",
+    "hiragana": "なまえ",
+    "meaning": "name",
+    "type": "noun",
+    "sentence": "お名前は何ですか。",
+    "reading": "おなまえはなんですか。",
+    "translation": "What is your name?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "犬",
+    "hiragana": "いぬ",
+    "meaning": "dog",
+    "type": "noun",
+    "sentence": "犬がいます。",
+    "reading": "いぬがいます。",
+    "translation": "There is a dog.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "猫",
+    "hiragana": "ねこ",
+    "meaning": "cat",
+    "type": "noun",
+    "sentence": "猫が好きです。",
+    "reading": "ねこがすきです。",
+    "translation": "I like cats.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "大きい",
+    "hiragana": "おおきい",
+    "meaning": "big",
+    "type": "i-adjective",
+    "sentence": "この駅は大きいです。",
+    "reading": "このえきはおおきいです。",
+    "translation": "This station is big.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "小さい",
+    "hiragana": "ちいさい",
+    "meaning": "small",
+    "type": "i-adjective",
+    "sentence": "この店は小さいです。",
+    "reading": "このみせはちいさいです。",
+    "translation": "This shop is small.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "新しい",
+    "hiragana": "あたらしい",
+    "meaning": "new",
+    "type": "i-adjective",
+    "sentence": "新しい本を買いました。",
+    "reading": "あたらしいほんをかいました。",
+    "translation": "I bought a new book.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "古い",
+    "hiragana": "ふるい",
+    "meaning": "old",
+    "type": "i-adjective",
+    "sentence": "この家は古いです。",
+    "reading": "このいえはふるいです。",
+    "translation": "This house is old.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "良い",
+    "hiragana": "いい",
+    "meaning": "good",
+    "type": "i-adjective",
+    "sentence": "今日は良い日です。",
+    "reading": "きょうはいいひです。",
+    "translation": "Today is a good day.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "悪い",
+    "hiragana": "わるい",
+    "meaning": "bad",
+    "type": "i-adjective",
+    "sentence": "天気が悪いです。",
+    "reading": "てんきがわるいです。",
+    "translation": "The weather is bad.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "暑い",
+    "hiragana": "あつい",
+    "meaning": "hot (weather)",
+    "type": "i-adjective",
+    "sentence": "今日は暑いです。",
+    "reading": "きょうはあついです。",
+    "translation": "Today is hot.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "寒い",
+    "hiragana": "さむい",
+    "meaning": "cold (weather)",
+    "type": "i-adjective",
+    "sentence": "今日は寒いです。",
+    "reading": "きょうはさむいです。",
+    "translation": "Today is cold.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "高い",
+    "hiragana": "たかい",
+    "meaning": "expensive / tall",
+    "type": "i-adjective",
+    "sentence": "この本は高いです。",
+    "reading": "このほんはたかいです。",
+    "translation": "This book is expensive.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "安い",
+    "hiragana": "やすい",
+    "meaning": "cheap",
+    "type": "i-adjective",
+    "sentence": "この水は安いです。",
+    "reading": "このみずはやすいです。",
+    "translation": "This water is cheap.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "楽しい",
+    "hiragana": "たのしい",
+    "meaning": "fun",
+    "type": "i-adjective",
+    "sentence": "日本語は楽しいです。",
+    "reading": "にほんごはたのしいです。",
+    "translation": "Japanese is fun.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "難しい",
+    "hiragana": "むずかしい",
+    "meaning": "difficult",
+    "type": "i-adjective",
+    "sentence": "漢字は難しいです。",
+    "reading": "かんじはむずかしいです。",
+    "translation": "Kanji is difficult.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "やさしい",
+    "hiragana": "やさしい",
+    "meaning": "kind / easy",
+    "type": "i-adjective",
+    "sentence": "先生はやさしいです。",
+    "reading": "せんせいはやさしいです。",
+    "translation": "The teacher is kind.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "忙しい",
+    "hiragana": "いそがしい",
+    "meaning": "busy",
+    "type": "i-adjective",
+    "sentence": "今日は忙しいです。",
+    "reading": "きょうはいそがしいです。",
+    "translation": "Today is busy.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "おいしい",
+    "hiragana": "おいしい",
+    "meaning": "delicious",
+    "type": "i-adjective",
+    "sentence": "ラーメンはおいしいです。",
+    "reading": "ラーメンはおいしいです。",
+    "translation": "Ramen is delicious.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "好き",
+    "hiragana": "すき",
+    "meaning": "liked / favorite",
+    "type": "na-adjective",
+    "sentence": "日本語が好きです。",
+    "reading": "にほんごがすきです。",
+    "translation": "I like Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "嫌い",
+    "hiragana": "きらい",
+    "meaning": "disliked",
+    "type": "na-adjective",
+    "sentence": "辛い食べ物が嫌いです。",
+    "reading": "からいたべものがきらいです。",
+    "translation": "I dislike spicy food.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "元気",
+    "hiragana": "げんき",
+    "meaning": "healthy / energetic",
+    "type": "na-adjective",
+    "sentence": "今日は元気です。",
+    "reading": "きょうはげんきです。",
+    "translation": "I am energetic today.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "静か",
+    "hiragana": "しずか",
+    "meaning": "quiet",
+    "type": "na-adjective",
+    "sentence": "今日は静かです。",
+    "reading": "きょうはしずかです。",
+    "translation": "Today is quiet.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "有名",
+    "hiragana": "ゆうめい",
+    "meaning": "famous",
+    "type": "na-adjective",
+    "sentence": "京都は有名です。",
+    "reading": "きょうとはゆうめいです。",
+    "translation": "Kyoto is famous.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "きれい",
+    "hiragana": "きれい",
+    "meaning": "beautiful / clean",
+    "type": "na-adjective",
+    "sentence": "この部屋はきれいです。",
+    "reading": "このへやはきれいです。",
+    "translation": "This room is clean.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "少し",
+    "hiragana": "すこし",
+    "meaning": "a little",
+    "type": "adverb",
+    "sentence": "日本語を少し話します。",
+    "reading": "にほんごをすこしはなします。",
+    "translation": "I speak a little Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "たくさん",
+    "hiragana": "たくさん",
+    "meaning": "a lot",
+    "type": "adverb",
+    "sentence": "たくさん勉強しました。",
+    "reading": "たくさんべんきょうしました。",
+    "translation": "I studied a lot.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "もっと",
+    "hiragana": "もっと",
+    "meaning": "more",
+    "type": "adverb",
+    "sentence": "もっと日本語を勉強したいです。",
+    "reading": "もっとにほんごをべんきょうしたいです。",
+    "translation": "I want to study Japanese more.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "一緒に",
+    "hiragana": "いっしょに",
+    "meaning": "together",
+    "type": "adverb",
+    "sentence": "一緒にラーメンを食べませんか。",
+    "reading": "いっしょにラーメンをたべませんか。",
+    "translation": "Would you like to eat ramen together?",
+    "jlpt": "N5"
+  }
+]
