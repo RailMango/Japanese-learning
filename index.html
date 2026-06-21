@@ -5,33 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>David's Japanese Study Hub</title>
   <style>
-    body { font-family: system-ui, sans-serif; margin: 0; background: #f7f7f7; color: #222; }
-    header { background: #111827; color: white; padding: 24px; text-align: center; }
-    nav { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; padding: 16px; background: white; }
-    button { padding: 10px 14px; border: 0; border-radius: 8px; cursor: pointer; background: #e5e7eb; }
-    button.active { background: #111827; color: white; }
-    main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
-    .card { background: white; border-radius: 14px; padding: 18px; margin-bottom: 14px; box-shadow: 0 2px 8px #0001; }
-    .jp { font-size: 1.5rem; font-weight: 700; }
-    .reading { color: #555; }
-    input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 16px; }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      padding: 28px 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #d1d5db;
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: white;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px #0001;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 10px 15px;
+      cursor: pointer;
+      background: #e5e7eb;
+      font-weight: 600;
+    }
+
+    button.active,
+    button:hover {
+      background: #111827;
+      color: white;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 3px 10px #0001;
+    }
+
+    .big {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .jp {
+      font-size: 1.6rem;
+      font-weight: 800;
+    }
+
+    .reading {
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 16px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #3730a3;
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-top: 8px;
+    }
+
+    .study-btn {
+      margin-top: 10px;
+      margin-right: 8px;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>日本語 Study Hub</h1>
-    <p>JLPT N5 Vocabulary, Grammar, Kanji, and Flashcards</p>
+    <p>David's daily JLPT N5 study dashboard</p>
   </header>
 
   <nav>
-    <button class="active" onclick="showSection('vocab', this)">Vocabulary</button>
+    <button class="active" onclick="showSection('home', this)">Home</button>
+    <button onclick="showSection('vocab', this)">Vocabulary</button>
     <button onclick="showSection('grammar', this)">Grammar</button>
     <button onclick="showSection('kanji', this)">Kanji</button>
     <button onclick="showSection('flashcards', this)">Flashcards</button>
+    <button onclick="showSection('quiz', this)">Quiz</button>
+    <button onclick="showSection('journal', this)">Journal</button>
   </nav>
 
   <main>
-    <input id="search" placeholder="Search English, kanji, or hiragana..." oninput="render()" />
+    <input id="search" placeholder="Search Japanese, hiragana, or English..." oninput="render()" />
     <section id="content"></section>
   </main>
 
@@ -41,6 +151,7 @@
         kanji: "食べる",
         hiragana: "たべる",
         meaning: "to eat",
+        type: "verb",
         sentence: "私は毎日ご飯を食べます。",
         reading: "わたしはまいにちごはんをたべます。",
         translation: "I eat rice/a meal every day."
@@ -49,17 +160,46 @@
         kanji: "行く",
         hiragana: "いく",
         meaning: "to go",
+        type: "verb",
         sentence: "明日、仕事に行きます。",
         reading: "あした、しごとにいきます。",
         translation: "Tomorrow, I will go to work."
       },
       {
+        kanji: "見る",
+        hiragana: "みる",
+        meaning: "to see / to watch",
+        type: "verb",
+        sentence: "仕事の後でテレビを見ます。",
+        reading: "しごとのあとでテレビをみます。",
+        translation: "I watch TV after work."
+      },
+      {
         kanji: "駅",
         hiragana: "えき",
         meaning: "station",
+        type: "noun",
         sentence: "駅まで歩きます。",
         reading: "えきまであるきます。",
         translation: "I walk to the station."
+      },
+      {
+        kanji: "今日",
+        hiragana: "きょう",
+        meaning: "today",
+        type: "noun",
+        sentence: "今日は日本語を勉強します。",
+        reading: "きょうはにほんごをべんきょうします。",
+        translation: "Today I will study Japanese."
+      },
+      {
+        kanji: "仕事",
+        hiragana: "しごと",
+        meaning: "work / job",
+        type: "noun",
+        sentence: "今日は仕事があります。",
+        reading: "きょうはしごとがあります。",
+        translation: "I have work today."
       }
     ];
 
@@ -69,35 +209,113 @@
         meaning: "want to do",
         example: "日本に行きたいです。",
         reading: "にほんにいきたいです。",
-        translation: "I want to go to Japan."
+        translation: "I want to go to Japan.",
+        note: "Attach たい to the verb stem: 行く → 行きたい."
       },
       {
         point: "〜ながら",
         meaning: "while doing",
         example: "働きながら、日本語を勉強します。",
         reading: "はたらきながら、にほんごをべんきょうします。",
-        translation: "I study Japanese while working."
+        translation: "I study Japanese while working.",
+        note: "Used when doing two actions at the same time."
+      },
+      {
+        point: "〜ませんか",
+        meaning: "Would you like to...?",
+        example: "一緒にラーメンを食べませんか。",
+        reading: "いっしょにラーメンをたべませんか。",
+        translation: "Would you like to eat ramen together?",
+        note: "A polite invitation."
       }
     ];
 
     const kanji = [
       { kanji: "日", reading: "にち / ひ", meaning: "day, sun", example: "日本" },
       { kanji: "本", reading: "ほん", meaning: "book, origin", example: "日本" },
-      { kanji: "人", reading: "じん / ひと", meaning: "person", example: "日本人" }
+      { kanji: "人", reading: "じん / ひと", meaning: "person", example: "日本人" },
+      { kanji: "語", reading: "ご", meaning: "language", example: "日本語" },
+      { kanji: "食", reading: "た / しょく", meaning: "eat, food", example: "食べる" }
     ];
 
-    let current = "vocab";
+    let current = "home";
+    let flashcardIndex = 0;
+    let showAnswer = false;
 
     function showSection(section, btn) {
       current = section;
-      document.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
+      document.getElementById("search").style.display =
+        ["vocab", "grammar", "kanji"].includes(section) ? "block" : "none";
+      render();
+    }
+
+    function markTodayDone() {
+      localStorage.setItem("studyDone", "yes");
+      render();
+    }
+
+    function nextFlashcard() {
+      flashcardIndex = (flashcardIndex + 1) % vocab.length;
+      showAnswer = false;
+      render();
+    }
+
+    function flipFlashcard() {
+      showAnswer = !showAnswer;
       render();
     }
 
     function render() {
       const q = document.getElementById("search").value.toLowerCase();
       const content = document.getElementById("content");
+      const studyDone = localStorage.getItem("studyDone") === "yes";
+
+      if (current === "home") {
+        const todayWords = vocab.slice(0, 3);
+
+        content.innerHTML = `
+          <div class="grid">
+            <div class="card">
+              <div class="big">${studyDone ? "✅" : "🔥"}</div>
+              <h2>Today’s Study</h2>
+              <p>${studyDone ? "Done for today. Nice work." : "Not done yet. Keep it simple."}</p>
+              <button class="study-btn" onclick="markTodayDone()">Mark Today Complete</button>
+            </div>
+
+            <div class="card">
+              <div class="big">${vocab.length}</div>
+              <h2>Vocabulary Words</h2>
+              <p class="small">Current N5 words in your site.</p>
+            </div>
+
+            <div class="card">
+              <div class="big">${grammar.length}</div>
+              <h2>Grammar Points</h2>
+              <p class="small">Current N5 grammar points.</p>
+            </div>
+
+            <div class="card">
+              <div class="big">${kanji.length}</div>
+              <h2>Kanji</h2>
+              <p class="small">Current kanji entries.</p>
+            </div>
+          </div>
+
+          <h2>Today’s 3 Words</h2>
+          ${todayWords.map(v => `
+            <div class="card">
+              <div class="jp">${v.kanji}</div>
+              <div class="reading">${v.hiragana}</div>
+              <p><b>${v.meaning}</b></p>
+              <p>${v.sentence}</p>
+              <p class="reading">${v.reading}</p>
+              <p>${v.translation}</p>
+            </div>
+          `).join("")}
+        `;
+      }
 
       if (current === "vocab") {
         content.innerHTML = vocab.filter(v =>
@@ -106,6 +324,7 @@
           <div class="card">
             <div class="jp">${v.kanji}</div>
             <div class="reading">${v.hiragana}</div>
+            <span class="tag">${v.type}</span>
             <p><b>Meaning:</b> ${v.meaning}</p>
             <p>${v.sentence}</p>
             <p class="reading">${v.reading}</p>
@@ -115,19 +334,24 @@
       }
 
       if (current === "grammar") {
-        content.innerHTML = grammar.map(g => `
+        content.innerHTML = grammar.filter(g =>
+          Object.values(g).join(" ").toLowerCase().includes(q)
+        ).map(g => `
           <div class="card">
             <div class="jp">${g.point}</div>
             <p><b>Meaning:</b> ${g.meaning}</p>
             <p>${g.example}</p>
             <p class="reading">${g.reading}</p>
             <p>${g.translation}</p>
+            <p><b>Note:</b> ${g.note}</p>
           </div>
         `).join("");
       }
 
       if (current === "kanji") {
-        content.innerHTML = kanji.map(k => `
+        content.innerHTML = kanji.filter(k =>
+          Object.values(k).join(" ").toLowerCase().includes(q)
+        ).map(k => `
           <div class="card">
             <div class="jp">${k.kanji}</div>
             <p><b>Reading:</b> ${k.reading}</p>
@@ -138,19 +362,60 @@
       }
 
       if (current === "flashcards") {
-        const random = vocab[Math.floor(Math.random() * vocab.length)];
+        const card = vocab[flashcardIndex];
+
         content.innerHTML = `
           <div class="card">
-            <h2>Flashcard</h2>
-            <div class="jp">${random.kanji}</div>
-            <div class="reading">${random.hiragana}</div>
-            <p><b>Meaning:</b> ${random.meaning}</p>
-            <p>${random.sentence}</p>
+            <h2>Flashcard Mode</h2>
+            <div class="jp">${card.kanji}</div>
+            <div class="reading">${card.hiragana}</div>
+
+            ${showAnswer ? `
+              <p><b>Meaning:</b> ${card.meaning}</p>
+              <p>${card.sentence}</p>
+              <p class="reading">${card.reading}</p>
+              <p>${card.translation}</p>
+            ` : `
+              <p class="small">Try to remember the meaning before flipping.</p>
+            `}
+
+            <button class="study-btn" onclick="flipFlashcard()">Flip</button>
+            <button class="study-btn" onclick="nextFlashcard()">Next</button>
+          </div>
+        `;
+      }
+
+      if (current === "quiz") {
+        content.innerHTML = `
+          <div class="card">
+            <h2>Mini Quiz</h2>
+            <p><b>Question:</b> What does <span class="jp">仕事</span> mean?</p>
+            <button onclick="alert('Not quite. 仕事 means work/job.')">station</button>
+            <button onclick="alert('Correct! 仕事 means work/job.')">work / job</button>
+            <button onclick="alert('Not quite. 食べる means to eat.')">to eat</button>
+            <button onclick="alert('Not quite. 今日 means today.')">today</button>
+          </div>
+        `;
+      }
+
+      if (current === "journal") {
+        content.innerHTML = `
+          <div class="card">
+            <h2>Japanese Journal</h2>
+            <p>Use this section for simple daily Japanese sentences.</p>
+            <p class="jp">今日は仕事があります。</p>
+            <p class="reading">きょうはしごとがあります。</p>
+            <p>I have work today.</p>
+
+            <p class="jp">仕事の後で日本語を勉強します。</p>
+            <p class="reading">しごとのあとでにほんごをべんきょうします。</p>
+            <p>After work, I will study Japanese.</p>
           </div>
         `;
       }
     }
 
+    document.getElementById("search").style.display = "none";
     render();
   </script>
 </body>
