@@ -63,6 +63,12 @@ function getTagClass(type) {
 
 function showSection(section, btn) {
   current = section;
+  const rect = btn.getBoundingClientRect();
+
+createSakura(
+    rect.left + rect.width / 2,
+    rect.top + rect.height / 2
+);
   document.querySelectorAll("nav button").forEach(button => button.classList.remove("active"));
   btn.classList.add("active");
   document.getElementById("search").style.display =
