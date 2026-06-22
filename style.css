@@ -363,44 +363,138 @@ textarea::placeholder {
   gap: 14px;
 }
 
+
 /* =========================
-   Sakura Click Animation
+   Mirai Branding v0.3.5
+========================= */
+
+header {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(240, 107, 141, 0.16), transparent 34rem),
+    rgba(255, 255, 255, 0.94);
+  border-bottom: 5px solid var(--red);
+}
+
+body.dark header {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(251, 113, 133, 0.14), transparent 34rem),
+    rgba(15, 23, 42, 0.92);
+}
+
+.brand-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-logo {
+  width: min(230px, 56vw);
+  height: auto;
+  display: block;
+  margin-bottom: -8px;
+  filter: drop-shadow(0 12px 24px rgba(16, 24, 39, 0.10));
+}
+
+body.dark .brand-logo {
+  filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.35));
+}
+
+header h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+header p {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.92rem;
+}
+
+header p span {
+  color: var(--red);
+  font-family: "Noto Sans JP", "Inter", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+/* =========================
+   Sakura Touch 2.0
 ========================= */
 
 .sakura-petal {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    pointer-events: none;
-    z-index: 9999;
-
-    background: linear-gradient(
-        135deg,
-        #ffd7e8,
-        #ffb7d5
-    );
-
-    border-radius: 70% 0 70% 0;
-
-    animation: sakuraFall 900ms ease-out forwards;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: var(--size, 14px);
+  height: calc(var(--size, 14px) * 1.35);
+  background:
+    radial-gradient(circle at 62% 28%, rgba(255,255,255,.78), transparent 18%),
+    linear-gradient(145deg, #ffd8e6 0%, #f59ab5 55%, #ec6f91 100%);
+  border-radius: 90% 12% 78% 18%;
+  opacity: 0;
+  transform: rotate(var(--start-rot, 0deg));
+  animation: sakuraDrift var(--duration, 1300ms) cubic-bezier(.16,.84,.32,1) forwards;
+  box-shadow: 0 8px 16px rgba(236, 111, 145, 0.18);
 }
 
-@keyframes sakuraFall {
+.sakura-petal::after {
+  content: "";
+  position: absolute;
+  inset: 18% 38% 18% 38%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  transform: rotate(24deg);
+}
 
-    0% {
-        opacity: 1;
-        transform:
-            translate(0,0)
-            rotate(0deg)
-            scale(1);
-    }
+.sakura-petal.alt {
+  border-radius: 12% 90% 18% 78%;
+  background:
+    radial-gradient(circle at 42% 28%, rgba(255,255,255,.72), transparent 18%),
+    linear-gradient(145deg, #ffe3ee 0%, #f7aec3 58%, #ef7899 100%);
+}
 
-    100% {
-        opacity: 0;
-        transform:
-            translate(var(--x),45px)
-            rotate(240deg)
-            scale(.6);
-    }
+.sakura-petal.tiny {
+  filter: blur(.1px);
+  opacity: .85;
+}
 
+@keyframes sakuraDrift {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(var(--start-rot, 0deg)) scale(.75);
+  }
+
+  12% {
+    opacity: .95;
+    transform: translate(calc(var(--x) * .16), -10px) rotate(calc(var(--start-rot, 0deg) + 35deg)) scale(1);
+  }
+
+  55% {
+    opacity: .9;
+    transform: translate(calc(var(--x) * .72), 38px) rotate(calc(var(--start-rot, 0deg) + 160deg)) scale(.92);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(var(--x), var(--y)) rotate(calc(var(--start-rot, 0deg) + 310deg)) scale(.55);
+  }
+}
+
+@media (max-width: 720px) {
+  .brand-logo {
+    width: min(180px, 56vw);
+  }
+
+  header h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  header p {
+    font-size: 0.78rem;
+  }
 }
