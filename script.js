@@ -61,14 +61,48 @@ function getTagClass(type) {
   return "tag tag-expression";
 }
 
+
+function createSakura(x, y) {
+  const petals = 3 + Math.floor(Math.random() * 2);
+
+  for (let i = 0; i < petals; i++) {
+    const petal = document.createElement("div");
+    petal.className = "sakura-petal";
+
+    if (Math.random() > 0.5) petal.classList.add("alt");
+    if (Math.random() > 0.65) petal.classList.add("tiny");
+
+    const size = 9 + Math.random() * 10;
+    const spreadX = (Math.random() * 150) - 75;
+    const fallY = 70 + Math.random() * 75;
+    const startRotation = Math.floor(Math.random() * 220) - 110;
+    const duration = 950 + Math.random() * 700;
+
+    petal.style.left = (x + (Math.random() * 18 - 9)) + "px";
+    petal.style.top = (y + (Math.random() * 12 - 6)) + "px";
+    petal.style.setProperty("--size", size + "px");
+    petal.style.setProperty("--x", spreadX + "px");
+    petal.style.setProperty("--y", fallY + "px");
+    petal.style.setProperty("--start-rot", startRotation + "deg");
+    petal.style.setProperty("--duration", duration + "ms");
+    petal.style.animationDelay = (i * 70) + "ms";
+
+    document.body.appendChild(petal);
+
+    setTimeout(() => {
+      petal.remove();
+    }, duration + 400);
+  }
+}
+
 function showSection(section, btn) {
   current = section;
-  const rect = btn.getBoundingClientRect();
 
-createSakura(
+  const rect = btn.getBoundingClientRect();
+  createSakura(
     rect.left + rect.width / 2,
     rect.top + rect.height / 2
-);
+  );
   document.querySelectorAll("nav button").forEach(button => button.classList.remove("active"));
   btn.classList.add("active");
   document.getElementById("search").style.display =
@@ -401,37 +435,5 @@ function render() {
 
 document.getElementById("search").style.display = "none";
 applySavedTheme();
-console.log("Japanese Study Hub v3.4.1 Sentence Practice loaded");
+console.log("Mirai v0.3.5 Branding loaded");
 loadData();
-function createSakura(x, y) {
-
-    const petals = 3;
-
-    for (let i = 0; i < petals; i++) {
-
-        const petal = document.createElement("div");
-
-        petal.className = "sakura-petal";
-
-        petal.style.left = x + "px";
-        petal.style.top = y + "px";
-
-        petal.style.setProperty(
-            "--x",
-            (Math.random() * 50 - 25) + "px"
-        );
-
-        petal.style.animationDelay =
-            (i * 80) + "ms";
-
-        document.body.appendChild(petal);
-
-        setTimeout(() => {
-
-            petal.remove();
-
-        }, 1000);
-
-    }
-
-}
