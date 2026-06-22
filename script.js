@@ -159,7 +159,7 @@ function render() {
   if (current === "home") {
     content.innerHTML = `
       <div class="card hero">
-        <div class="big">${studyDone ? "âœ…" : "ðŸ”¥"}</div>
+        <div class="big">${studyDone ? "Mission Complete" : "Ready to Study"}</div>
         <h2>Welcome back, David-san</h2>
         <p><b>Status:</b> ${studyDone ? "Daily mission complete." : "Daily mission not complete yet."}</p>
         <p>The mission gives you structure. Free Study lets you explore and grind whenever you want.</p>
