@@ -45,27 +45,28 @@ body::before {
 }
 
 header {
-  background:
-    linear-gradient(135deg, rgba(16, 24, 39, 0.96), rgba(31, 53, 94, 0.96)),
-    radial-gradient(circle at top, rgba(188, 0, 45, 0.25), transparent 26rem);
-  color: white;
-  padding: 42px 18px 38px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  color: var(--ink);
+  padding: 32px 18px 28px;
   text-align: center;
-  border-bottom: 4px solid var(--red);
+  border-bottom: 5px solid var(--red);
+  box-shadow: 0 8px 24px rgba(16,24,39,0.06);
 }
 
 header h1 {
   margin: 0;
   font-family: "Noto Sans JP", "Inter", sans-serif;
-  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   font-weight: 900;
+  color: var(--navy);
   letter-spacing: -0.04em;
 }
 
 header p {
-  margin: 10px 0 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 1.05rem;
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 1rem;
   font-weight: 600;
 }
 
