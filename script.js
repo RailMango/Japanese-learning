@@ -397,3 +397,35 @@ document.getElementById("search").style.display = "none";
 applySavedTheme();
 console.log("Japanese Study Hub v3.4.1 Sentence Practice loaded");
 loadData();
+function createSakura(x, y) {
+
+    const petals = 3;
+
+    for (let i = 0; i < petals; i++) {
+
+        const petal = document.createElement("div");
+
+        petal.className = "sakura-petal";
+
+        petal.style.left = x + "px";
+        petal.style.top = y + "px";
+
+        petal.style.setProperty(
+            "--x",
+            (Math.random() * 50 - 25) + "px"
+        );
+
+        petal.style.animationDelay =
+            (i * 80) + "ms";
+
+        document.body.appendChild(petal);
+
+        setTimeout(() => {
+
+            petal.remove();
+
+        }, 1000);
+
+    }
+
+}
