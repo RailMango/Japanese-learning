@@ -362,3 +362,45 @@ textarea::placeholder {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 14px;
 }
+
+/* =========================
+   Sakura Click Animation
+========================= */
+
+.sakura-petal {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+    z-index: 9999;
+
+    background: linear-gradient(
+        135deg,
+        #ffd7e8,
+        #ffb7d5
+    );
+
+    border-radius: 70% 0 70% 0;
+
+    animation: sakuraFall 900ms ease-out forwards;
+}
+
+@keyframes sakuraFall {
+
+    0% {
+        opacity: 1;
+        transform:
+            translate(0,0)
+            rotate(0deg)
+            scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform:
+            translate(var(--x),45px)
+            rotate(240deg)
+            scale(.6);
+    }
+
+}
