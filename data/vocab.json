@@ -162,7 +162,7 @@
   {
     "kanji": "ある",
     "hiragana": "ある",
-    "meaning": "to exist / to have (things)",
+    "meaning": "to exist / to have things",
     "type": "verb",
     "sentence": "時間があります。",
     "reading": "じかんがあります。",
@@ -172,7 +172,7 @@
   {
     "kanji": "いる",
     "hiragana": "いる",
-    "meaning": "to exist / to be (people/animals)",
+    "meaning": "to exist / to be people or animals",
     "type": "verb",
     "sentence": "日本に友達がいます。",
     "reading": "にほんにともだちがいます。",
@@ -862,7 +862,7 @@
   {
     "kanji": "暑い",
     "hiragana": "あつい",
-    "meaning": "hot (weather)",
+    "meaning": "hot weather",
     "type": "i-adjective",
     "sentence": "今日は暑いです。",
     "reading": "きょうはあついです。",
@@ -872,7 +872,7 @@
   {
     "kanji": "寒い",
     "hiragana": "さむい",
-    "meaning": "cold (weather)",
+    "meaning": "cold weather",
     "type": "i-adjective",
     "sentence": "今日は寒いです。",
     "reading": "きょうはさむいです。",
