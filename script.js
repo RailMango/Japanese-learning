@@ -62,96 +62,39 @@ function getTagClass(type) {
 }
 
 
-.sakura-petal {
+function createSakura(x, y) {
+  // Softer Sakura Touch: usually 1-2 petals, rarely 3.
+  const petals = Math.random() < 0.75 ? 1 + Math.floor(Math.random() * 2) : 3;
 
-    position: fixed;
+  for (let i = 0; i < petals; i++) {
+    const petal = document.createElement("div");
+    petal.className = "sakura-petal";
 
-    pointer-events: none;
-
-    z-index: 9999;
-
-    width: var(--size);
-
-    height: calc(var(--size) * 1.3);
-
-    background:
-        linear-gradient(
-            145deg,
-            #ffeaf2,
-            #ffd5e5
-        );
-
-    border-radius: 90% 15% 80% 20%;
-
-    opacity: 0;
-
-    animation:
-        sakuraFloat
-        var(--duration)
-        ease-out
-        forwards;
-
-}
-
-.sakura-petal.alt {
-
-    border-radius:
-        20% 90% 15% 80%;
-
-}
-
-@keyframes sakuraFloat {
-
-    0% {
-
-        opacity: 0;
-
-        transform:
-            translate(0,0)
-            rotate(var(--start-rot))
-            scale(.8);
-
+    if (Math.random() > 0.55) {
+      petal.classList.add("alt");
     }
 
-    15% {
+    const size = 8 + Math.random() * 5;
+    const spreadX = (Math.random() * 90) - 45;
+    const fallY = 85 + Math.random() * 45;
+    const startRotation = Math.floor(Math.random() * 70) - 35;
+    const duration = 1700 + Math.random() * 800;
 
-        opacity: .9;
+    petal.style.left = (x + (Math.random() * 10 - 5)) + "px";
+    petal.style.top = (y + (Math.random() * 8 - 4)) + "px";
+    petal.style.setProperty("--size", size + "px");
+    petal.style.setProperty("--x", spreadX + "px");
+    petal.style.setProperty("--y", fallY + "px");
+    petal.style.setProperty("--start-rot", startRotation + "deg");
+    petal.style.setProperty("--duration", duration + "ms");
+    petal.style.animationDelay = (i * 120) + "ms";
 
-    }
+    document.body.appendChild(petal);
 
-    50% {
-
-        transform:
-            translate(
-                calc(var(--x) * .45),
-                30px
-            )
-            rotate(
-                calc(
-                    var(--start-rot) + 20deg
-                )
-            );
-
-    }
-
-    100% {
-
-        opacity: 0;
-
-        transform:
-            translate(
-                var(--x),
-                var(--y)
-            )
-            rotate(
-                calc(
-                    var(--start-rot) + 55deg
-                )
-            )
-            scale(.65);
-
-    }
-
+    setTimeout(() => {
+      petal.remove();
+    }, duration + 400);
+  }
 }
 
 function showSection(section, btn) {
