@@ -1,12 +1,16 @@
-[CHANGELOG.md](https://github.com/user-attachments/files/29187169/CHANGELOG.md)
+[CHANGELOG.md](https://github.com/user-attachments/files/29188143/CHANGELOG.md)
 # Japanese Study Hub Changelog
 
-## v3.3 - Tsuki
+## v3.4.1 - Sentence Practice
 
 Added:
-- Light/Dark Mode button in the header.
-- Theme preference saved with localStorage.
-- Dark theme styling for cards, nav, inputs, and background.
+- New Sentence Practice page.
+- N5-level sentence challenge generator.
+- Random vocabulary + compatible grammar prompts.
+- Text box for learner sentences.
+- Reveal button for one natural example.
+- New Challenge button.
 
 Changed:
-- Header subtitle changed to Study • Practice • Grow.
+- Added Sentence Practice to navigation and Free Study.
+- Homepage greeting is less personalized so the app feels usable for everyone.
