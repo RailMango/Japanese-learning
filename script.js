@@ -42,32 +42,23 @@ function getTagClass(type) {
 
 function showSection(section, btn) {
   current = section;
-
-  document.querySelectorAll("nav button").forEach(button => {
-    button.classList.remove("active");
-  });
-
+  document.querySelectorAll("nav button").forEach(button => button.classList.remove("active"));
   btn.classList.add("active");
-
   document.getElementById("search").style.display =
     ["vocab", "grammar", "kanji"].includes(section) ? "block" : "none";
-
   render();
 }
 
 function go(section) {
   current = section;
-
   document.querySelectorAll("nav button").forEach(button => {
     button.classList.remove("active");
     if (button.textContent.toLowerCase().includes(section)) {
       button.classList.add("active");
     }
   });
-
   document.getElementById("search").style.display =
     ["vocab", "grammar", "kanji"].includes(section) ? "block" : "none";
-
   render();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -96,11 +87,11 @@ function flipFlashcard() {
 function renderMission() {
   return `
     <div class="card hero">
-      <h2>ä»Šæ—¥ã®ãƒŸãƒƒã‚·ãƒ§ãƒ³ â€” Todayâ€™s Mission</h2>
+      <h2>今日のミッション - Today's Mission</h2>
       <p>This is your recommended minimum. Finish it, then study freely as much as you want.</p>
 
       <div class="mission-item">
-        <div class="check">â‘ </div>
+        <div class="check">1</div>
         <div>
           <b>Learn 3 vocabulary words</b>
           <p class="small">Read the word, reading, meaning, and example sentence out loud.</p>
@@ -108,7 +99,7 @@ function renderMission() {
       </div>
 
       <div class="mission-item">
-        <div class="check">â‘¡</div>
+        <div class="check">2</div>
         <div>
           <b>Review 1 grammar point</b>
           <p class="small">Make one original sentence with it.</p>
@@ -116,7 +107,7 @@ function renderMission() {
       </div>
 
       <div class="mission-item">
-        <div class="check">â‘¢</div>
+        <div class="check">3</div>
         <div>
           <b>Do 5 flashcards</b>
           <p class="small">Say the answer before flipping the card.</p>
@@ -124,10 +115,10 @@ function renderMission() {
       </div>
 
       <div class="mission-item">
-        <div class="check">â‘£</div>
+        <div class="check">4</div>
         <div>
           <b>Write 1 journal sentence</b>
-          <p class="small">Keep it simple. Example: ä»Šæ—¥ã¯ä»•äº‹ãŒã‚ã‚Šã¾ã™ã€‚</p>
+          <p class="small">Keep it simple. Example: 今日は仕事があります。</p>
         </div>
       </div>
 
@@ -159,7 +150,7 @@ function render() {
   if (current === "home") {
     content.innerHTML = `
       <div class="card hero">
-        <div class="big">${studyDone ? "Mission Complete" : "Ready to Study"}</div>
+        <div class="big">${studyDone ? "Complete" : "Ready"}</div>
         <h2>Welcome back, David-san</h2>
         <p><b>Status:</b> ${studyDone ? "Daily mission complete." : "Daily mission not complete yet."}</p>
         <p>The mission gives you structure. Free Study lets you explore and grind whenever you want.</p>
@@ -191,7 +182,7 @@ function render() {
         </div>
       </div>
 
-      <h2>Todayâ€™s 3 Words</h2>
+      <h2>Today's 3 Words</h2>
       ${renderVocabCards(vocab.slice(0, 3))}
     `;
   }
@@ -201,16 +192,12 @@ function render() {
   }
 
   if (current === "vocab") {
-    const filtered = vocab.filter(v =>
-      Object.values(v).join(" ").toLowerCase().includes(q)
-    );
+    const filtered = vocab.filter(v => Object.values(v).join(" ").toLowerCase().includes(q));
     content.innerHTML = `<h2>Vocabulary</h2>${renderVocabCards(filtered)}`;
   }
 
   if (current === "grammar") {
-    const filtered = grammar.filter(g =>
-      Object.values(g).join(" ").toLowerCase().includes(q)
-    );
+    const filtered = grammar.filter(g => Object.values(g).join(" ").toLowerCase().includes(q));
     content.innerHTML = filtered.map(g => `
       <div class="card">
         <div class="jp">${g.point}</div>
@@ -224,9 +211,7 @@ function render() {
   }
 
   if (current === "kanji") {
-    const filtered = kanji.filter(k =>
-      Object.values(k).join(" ").toLowerCase().includes(q)
-    );
+    const filtered = kanji.filter(k => Object.values(k).join(" ").toLowerCase().includes(q));
     content.innerHTML = filtered.map(k => `
       <div class="card">
         <div class="jp">${k.kanji}</div>
@@ -283,16 +268,16 @@ function render() {
         <h2>Japanese Journal</h2>
         <p>Write one simple sentence per day. Start small. Accuracy first.</p>
 
-        <p class="jp">ä»Šæ—¥ã¯ä»•äº‹ãŒã‚ã‚Šã¾ã™ã€‚</p>
-        <p class="reading">ãã‚‡ã†ã¯ã—ã”ã¨ãŒã‚ã‚Šã¾ã™ã€‚</p>
+        <p class="jp">今日は仕事があります。</p>
+        <p class="reading">きょうはしごとがあります。</p>
         <p>I have work today.</p>
 
-        <p class="jp">ä»•äº‹ã®å¾Œã§æ—¥æœ¬èªžã‚’å‹‰å¼·ã—ã¾ã™ã€‚</p>
-        <p class="reading">ã—ã”ã¨ã®ã‚ã¨ã§ã«ã»ã‚“ã”ã‚’ã¹ã‚“ãã‚‡ã†ã—ã¾ã™ã€‚</p>
+        <p class="jp">仕事の後で日本語を勉強します。</p>
+        <p class="reading">しごとのあとでにほんごをべんきょうします。</p>
         <p>After work, I will study Japanese.</p>
 
-        <p class="jp">æ˜Žæ—¥ã€æ—¥æœ¬èªžã‚’ã‚‚ã£ã¨å‹‰å¼·ã—ãŸã„ã§ã™ã€‚</p>
-        <p class="reading">ã‚ã—ãŸã€ã«ã»ã‚“ã”ã‚’ã‚‚ã£ã¨ã¹ã‚“ãã‚‡ã†ã—ãŸã„ã§ã™ã€‚</p>
+        <p class="jp">明日、日本語をもっと勉強したいです。</p>
+        <p class="reading">あした、にほんごをもっとべんきょうしたいです。</p>
         <p>Tomorrow, I want to study Japanese more.</p>
       </div>
     `;
@@ -300,4 +285,5 @@ function render() {
 }
 
 document.getElementById("search").style.display = "none";
+console.log("Japanese Study Hub v3.0.1 loaded");
 loadData();
