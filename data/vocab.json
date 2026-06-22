@@ -1048,5 +1048,505 @@
     "reading": "いっしょにラーメンをたべませんか。",
     "translation": "Would you like to eat ramen together?",
     "jlpt": "N5"
+  },
+  {
+    "kanji": "何",
+    "hiragana": "なに",
+    "meaning": "what",
+    "type": "noun",
+    "sentence": "これは何ですか。",
+    "reading": "これはなんですか。",
+    "translation": "What is this?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "誰",
+    "hiragana": "だれ",
+    "meaning": "who",
+    "type": "noun",
+    "sentence": "あの人は誰ですか。",
+    "reading": "あのひとはだれですか。",
+    "translation": "Who is that person?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "どこ",
+    "hiragana": "どこ",
+    "meaning": "where",
+    "type": "expression",
+    "sentence": "駅はどこですか。",
+    "reading": "えきはどこですか。",
+    "translation": "Where is the station?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "いつ",
+    "hiragana": "いつ",
+    "meaning": "when",
+    "type": "expression",
+    "sentence": "いつ日本に行きますか。",
+    "reading": "いつにほんにいきますか。",
+    "translation": "When will you go to Japan?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "どう",
+    "hiragana": "どう",
+    "meaning": "how",
+    "type": "expression",
+    "sentence": "旅行はどうでしたか。",
+    "reading": "りょこうはどうでしたか。",
+    "translation": "How was the trip?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "いくら",
+    "hiragana": "いくら",
+    "meaning": "how much",
+    "type": "expression",
+    "sentence": "これはいくらですか。",
+    "reading": "これはいくらですか。",
+    "translation": "How much is this?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "全部",
+    "hiragana": "ぜんぶ",
+    "meaning": "all / everything",
+    "type": "noun",
+    "sentence": "全部食べました。",
+    "reading": "ぜんぶたべました。",
+    "translation": "I ate everything.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "半分",
+    "hiragana": "はんぶん",
+    "meaning": "half",
+    "type": "noun",
+    "sentence": "半分ください。",
+    "reading": "はんぶんください。",
+    "translation": "Please give me half.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "一つ",
+    "hiragana": "ひとつ",
+    "meaning": "one thing",
+    "type": "noun",
+    "sentence": "水を一つください。",
+    "reading": "みずをひとつください。",
+    "translation": "One water, please.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "二つ",
+    "hiragana": "ふたつ",
+    "meaning": "two things",
+    "type": "noun",
+    "sentence": "りんごを二つ買います。",
+    "reading": "りんごをふたつかいます。",
+    "translation": "I will buy two apples.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "三つ",
+    "hiragana": "みっつ",
+    "meaning": "three things",
+    "type": "noun",
+    "sentence": "パンを三つ食べました。",
+    "reading": "パンをみっつたべました。",
+    "translation": "I ate three pieces of bread.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "四つ",
+    "hiragana": "よっつ",
+    "meaning": "four things",
+    "type": "noun",
+    "sentence": "チケットを四つください。",
+    "reading": "チケットをよっつください。",
+    "translation": "Four tickets, please.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "五つ",
+    "hiragana": "いつつ",
+    "meaning": "five things",
+    "type": "noun",
+    "sentence": "卵を五つ買いました。",
+    "reading": "たまごをいつつかいました。",
+    "translation": "I bought five eggs.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "円",
+    "hiragana": "えん",
+    "meaning": "yen",
+    "type": "noun",
+    "sentence": "これは五百円です。",
+    "reading": "これはごひゃくえんです。",
+    "translation": "This is 500 yen.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "お金",
+    "hiragana": "おかね",
+    "meaning": "money",
+    "type": "noun",
+    "sentence": "お金がありません。",
+    "reading": "おかねがありません。",
+    "translation": "I do not have money.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "財布",
+    "hiragana": "さいふ",
+    "meaning": "wallet",
+    "type": "noun",
+    "sentence": "財布はかばんの中にあります。",
+    "reading": "さいふはかばんのなかにあります。",
+    "translation": "My wallet is inside my bag.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "切符",
+    "hiragana": "きっぷ",
+    "meaning": "ticket",
+    "type": "noun",
+    "sentence": "駅で切符を買います。",
+    "reading": "えきできっぷをかいます。",
+    "translation": "I buy a ticket at the station.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "入口",
+    "hiragana": "いりぐち",
+    "meaning": "entrance",
+    "type": "noun",
+    "sentence": "入口はあそこです。",
+    "reading": "いりぐちはあそこです。",
+    "translation": "The entrance is over there.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "出口",
+    "hiragana": "でぐち",
+    "meaning": "exit",
+    "type": "noun",
+    "sentence": "出口はどこですか。",
+    "reading": "でぐちはどこですか。",
+    "translation": "Where is the exit?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "道",
+    "hiragana": "みち",
+    "meaning": "road / way",
+    "type": "noun",
+    "sentence": "この道を歩きます。",
+    "reading": "このみちをあるきます。",
+    "translation": "I walk on this road.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "空港",
+    "hiragana": "くうこう",
+    "meaning": "airport",
+    "type": "noun",
+    "sentence": "空港に行きます。",
+    "reading": "くうこうにいきます。",
+    "translation": "I go to the airport.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "飛行機",
+    "hiragana": "ひこうき",
+    "meaning": "airplane",
+    "type": "noun",
+    "sentence": "飛行機に乗ります。",
+    "reading": "ひこうきにのります。",
+    "translation": "I get on an airplane.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "ホテル",
+    "hiragana": "ホテル",
+    "meaning": "hotel",
+    "type": "noun",
+    "sentence": "ホテルに泊まります。",
+    "reading": "ホテルにとまります。",
+    "translation": "I stay at a hotel.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "部屋番号",
+    "hiragana": "へやばんごう",
+    "meaning": "room number",
+    "type": "noun",
+    "sentence": "部屋番号は何ですか。",
+    "reading": "へやばんごうはなんですか。",
+    "translation": "What is the room number?",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "予約",
+    "hiragana": "よやく",
+    "meaning": "reservation",
+    "type": "noun",
+    "sentence": "予約があります。",
+    "reading": "よやくがあります。",
+    "translation": "I have a reservation.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "地図",
+    "hiragana": "ちず",
+    "meaning": "map",
+    "type": "noun",
+    "sentence": "地図を見ます。",
+    "reading": "ちずをみます。",
+    "translation": "I look at the map.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "写真",
+    "hiragana": "しゃしん",
+    "meaning": "photo",
+    "type": "noun",
+    "sentence": "日本で写真を撮ります。",
+    "reading": "にほんでしゃしんをとります。",
+    "translation": "I take photos in Japan.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "撮る",
+    "hiragana": "とる",
+    "meaning": "to take a photo",
+    "type": "verb",
+    "sentence": "友達の写真を撮ります。",
+    "reading": "ともだちのしゃしんをとります。",
+    "translation": "I take a photo of my friend.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "泊まる",
+    "hiragana": "とまる",
+    "meaning": "to stay overnight",
+    "type": "verb",
+    "sentence": "京都のホテルに泊まります。",
+    "reading": "きょうとのホテルにとまります。",
+    "translation": "I stay at a hotel in Kyoto.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "取る",
+    "hiragana": "とる",
+    "meaning": "to take / to get",
+    "type": "verb",
+    "sentence": "チケットを取ります。",
+    "reading": "チケットをとります。",
+    "translation": "I get a ticket.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "教える",
+    "hiragana": "おしえる",
+    "meaning": "to teach / to tell",
+    "type": "verb",
+    "sentence": "日本語を教えてください。",
+    "reading": "にほんごをおしえてください。",
+    "translation": "Please teach me Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "習う",
+    "hiragana": "ならう",
+    "meaning": "to learn",
+    "type": "verb",
+    "sentence": "先生に日本語を習います。",
+    "reading": "せんせいににほんごをならいます。",
+    "translation": "I learn Japanese from a teacher.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "練習する",
+    "hiragana": "れんしゅうする",
+    "meaning": "to practice",
+    "type": "verb",
+    "sentence": "毎日日本語を練習します。",
+    "reading": "まいにちにほんごをれんしゅうします。",
+    "translation": "I practice Japanese every day.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "覚える",
+    "hiragana": "おぼえる",
+    "meaning": "to memorize / to remember",
+    "type": "verb",
+    "sentence": "新しい単語を覚えます。",
+    "reading": "あたらしいたんごをおぼえます。",
+    "translation": "I memorize new words.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "始める",
+    "hiragana": "はじめる",
+    "meaning": "to start",
+    "type": "verb",
+    "sentence": "日本語の勉強を始めます。",
+    "reading": "にほんごのべんきょうをはじめます。",
+    "translation": "I start studying Japanese.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "終わる",
+    "hiragana": "おわる",
+    "meaning": "to finish / to end",
+    "type": "verb",
+    "sentence": "仕事は十一時に終わります。",
+    "reading": "しごとはじゅういちじにおわります。",
+    "translation": "Work finishes at 11.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "洗う",
+    "hiragana": "あらう",
+    "meaning": "to wash",
+    "type": "verb",
+    "sentence": "手を洗います。",
+    "reading": "てをあらいます。",
+    "translation": "I wash my hands.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "開ける",
+    "hiragana": "あける",
+    "meaning": "to open",
+    "type": "verb",
+    "sentence": "ドアを開けます。",
+    "reading": "ドアをあけます。",
+    "translation": "I open the door.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "閉める",
+    "hiragana": "しめる",
+    "meaning": "to close",
+    "type": "verb",
+    "sentence": "窓を閉めます。",
+    "reading": "まどをしめます。",
+    "translation": "I close the window.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "座る",
+    "hiragana": "すわる",
+    "meaning": "to sit",
+    "type": "verb",
+    "sentence": "椅子に座ります。",
+    "reading": "いすにすわります。",
+    "translation": "I sit on the chair.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "立つ",
+    "hiragana": "たつ",
+    "meaning": "to stand",
+    "type": "verb",
+    "sentence": "駅で立ちます。",
+    "reading": "えきでたちます。",
+    "translation": "I stand at the station.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "作る",
+    "hiragana": "つくる",
+    "meaning": "to make",
+    "type": "verb",
+    "sentence": "晩ご飯を作ります。",
+    "reading": "ばんごはんをつくります。",
+    "translation": "I make dinner.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "料理",
+    "hiragana": "りょうり",
+    "meaning": "cooking / cuisine",
+    "type": "noun",
+    "sentence": "日本料理が好きです。",
+    "reading": "にほんりょうりがすきです。",
+    "translation": "I like Japanese food/cuisine.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "朝ご飯",
+    "hiragana": "あさごはん",
+    "meaning": "breakfast",
+    "type": "noun",
+    "sentence": "朝ご飯を食べます。",
+    "reading": "あさごはんをたべます。",
+    "translation": "I eat breakfast.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "昼ご飯",
+    "hiragana": "ひるごはん",
+    "meaning": "lunch",
+    "type": "noun",
+    "sentence": "昼ご飯を食べました。",
+    "reading": "ひるごはんをたべました。",
+    "translation": "I ate lunch.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "晩ご飯",
+    "hiragana": "ばんごはん",
+    "meaning": "dinner",
+    "type": "noun",
+    "sentence": "晩ご飯を作ります。",
+    "reading": "ばんごはんをつくります。",
+    "translation": "I make dinner.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "パン",
+    "hiragana": "パン",
+    "meaning": "bread",
+    "type": "noun",
+    "sentence": "朝、パンを食べます。",
+    "reading": "あさ、パンをたべます。",
+    "translation": "In the morning, I eat bread.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "卵",
+    "hiragana": "たまご",
+    "meaning": "egg",
+    "type": "noun",
+    "sentence": "卵を二つ買います。",
+    "reading": "たまごをふたつかいます。",
+    "translation": "I buy two eggs.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "牛乳",
+    "hiragana": "ぎゅうにゅう",
+    "meaning": "milk",
+    "type": "noun",
+    "sentence": "牛乳を飲みません。",
+    "reading": "ぎゅうにゅうをのみません。",
+    "translation": "I do not drink milk.",
+    "jlpt": "N5"
+  },
+  {
+    "kanji": "薬",
+    "hiragana": "くすり",
+    "meaning": "medicine",
+    "type": "noun",
+    "sentence": "薬を飲みます。",
+    "reading": "くすりをのみます。",
+    "translation": "I take medicine.",
+    "jlpt": "N5"
   }
 ]
