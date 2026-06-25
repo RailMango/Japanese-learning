@@ -1,18 +1,27 @@
-[CHANGELOG.md](https://github.com/user-attachments/files/29219686/CHANGELOG.md)
+[CHANGELOG.md](https://github.com/user-attachments/files/29342858/CHANGELOG.md)
 # Mirai Changelog
 
-## v0.3.5 - Mirai Branding
+## v0.4.0 - Foundation
 
 Added:
-- New Mirai brand identity.
-- Custom SVG logo in assets/mirai-logo.svg.
-- New header with Mirai, 未来, and Learn. Remember. Use.
-- Sakura Touch 2.0 with cleaner petals, varied sizes, smoother drift, and wider spread.
+- Expanded vocabulary database to 255 N5-focused words.
+- Expanded grammar database to 30 N5 grammar points.
+- Expanded kanji database to 40 beginner/N5 kanji.
+- New Vocabulary category cards:
+  - All Vocabulary
+  - Nouns
+  - Verbs
+  - i-Adjectives
+  - na-Adjectives
+  - Adverbs
+  - Expressions
+- Search now works inside the selected vocabulary category.
+- Back to Categories button inside Vocabulary.
 
 Changed:
-- Page title changed from Japanese Study Hub to Mirai.
-- Header styling is cleaner and more brand-focused.
-- Sakura petals now feel more like a gentle breeze instead of simple falling squares.
+- Vocabulary page no longer opens as one massive scrolling list.
+- Mirai is now easier to scale toward the complete N5 curriculum.
 
 Next:
-- v0.4.0 - Foundation: vocabulary, grammar, kanji expansion + vocabulary category cards.
+- v0.4.1 - Polish: homepage clarity, new-user friendliness, and tutor-recommendable presentation.
+- v0.5.0 - Kotoba: favorites, learned words, review queue, and spaced repetition.
