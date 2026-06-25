@@ -1,5 +1,59 @@
 [
   {
+    "point": "〜です",
+    "meaning": "is / am / are",
+    "example": "私は学生です。",
+    "reading": "わたしはがくせいです。",
+    "translation": "I am a student.",
+    "note": "Use です to make a polite sentence with nouns and adjectives.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ではありません",
+    "meaning": "is not / am not / are not",
+    "example": "私は学生ではありません。",
+    "reading": "わたしはがくせいではありません。",
+    "translation": "I am not a student.",
+    "note": "Polite negative form of です.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ます",
+    "meaning": "polite present/future verb form",
+    "example": "日本語を勉強します。",
+    "reading": "にほんごをべんきょうします。",
+    "translation": "I study Japanese.",
+    "note": "Used for polite present or future actions.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ません",
+    "meaning": "polite negative verb form",
+    "example": "今日は働きません。",
+    "reading": "きょうははたらきません。",
+    "translation": "I do not work today.",
+    "note": "Negative form of 〜ます.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ました",
+    "meaning": "polite past verb form",
+    "example": "昨日、ラーメンを食べました。",
+    "reading": "きのう、ラーメンをたべました。",
+    "translation": "Yesterday, I ate ramen.",
+    "note": "Past form of 〜ます.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ませんでした",
+    "meaning": "polite negative past verb form",
+    "example": "昨日、勉強しませんでした。",
+    "reading": "きのう、べんきょうしませんでした。",
+    "translation": "Yesterday, I did not study.",
+    "note": "Past negative form of 〜ます.",
+    "jlpt": "N5"
+  },
+  {
     "point": "〜たいです",
     "meaning": "want to do",
     "example": "日本に行きたいです。",
@@ -9,21 +63,12 @@
     "jlpt": "N5"
   },
   {
-    "point": "〜ながら",
-    "meaning": "while doing",
-    "example": "働きながら、日本語を勉強します。",
-    "reading": "はたらきながら、にほんごをべんきょうします。",
-    "translation": "I study Japanese while working.",
-    "note": "Used when doing two actions at the same time.",
-    "jlpt": "N5"
-  },
-  {
-    "point": "〜ませんか",
-    "meaning": "Would you like to...?",
-    "example": "一緒にラーメンを食べませんか。",
-    "reading": "いっしょにラーメンをたべませんか。",
-    "translation": "Would you like to eat ramen together?",
-    "note": "A polite invitation.",
+    "point": "〜たくないです",
+    "meaning": "do not want to do",
+    "example": "今日は働きたくないです。",
+    "reading": "きょうははたらきたくないです。",
+    "translation": "I do not want to work today.",
+    "note": "Negative form of 〜たいです.",
     "jlpt": "N5"
   },
   {
@@ -42,6 +87,186 @@
     "reading": "にほんにともだちがいます。",
     "translation": "I have a friend in Japan.",
     "note": "Use います for people and animals.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜にあります",
+    "meaning": "is located at / in",
+    "example": "本は机の上にあります。",
+    "reading": "ほんはつくえのうえにあります。",
+    "translation": "The book is on the desk.",
+    "note": "Use に to mark location with あります.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜にいます",
+    "meaning": "is located at / in for living things",
+    "example": "猫は部屋にいます。",
+    "reading": "ねこはへやにいます。",
+    "translation": "The cat is in the room.",
+    "note": "Use に with います for people and animals.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜へ行きます",
+    "meaning": "go to / toward",
+    "example": "東京へ行きます。",
+    "reading": "とうきょうへいきます。",
+    "translation": "I go to Tokyo.",
+    "note": "へ marks direction. に can also mark destination.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜で",
+    "meaning": "at / by means of",
+    "example": "学校で勉強します。",
+    "reading": "がっこうでべんきょうします。",
+    "translation": "I study at school.",
+    "note": "で marks where an action happens or the method used.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜を",
+    "meaning": "direct object marker",
+    "example": "水を飲みます。",
+    "reading": "みずをのみます。",
+    "translation": "I drink water.",
+    "note": "を marks what receives the action.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜と",
+    "meaning": "with / and",
+    "example": "友達と話します。",
+    "reading": "ともだちとはなします。",
+    "translation": "I talk with my friend.",
+    "note": "と can mean 'with' or connect nouns as 'and'.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜の",
+    "meaning": "possession / description",
+    "example": "日本語の本です。",
+    "reading": "にほんごのほんです。",
+    "translation": "It is a Japanese book.",
+    "note": "の connects nouns and often works like 'of' or possessive 's'.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜も",
+    "meaning": "also / too",
+    "example": "私も日本語を勉強します。",
+    "reading": "わたしもにほんごをべんきょうします。",
+    "translation": "I also study Japanese.",
+    "note": "も replaces は, が, or を when meaning 'also'.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜か",
+    "meaning": "question marker",
+    "example": "これは何ですか。",
+    "reading": "これはなんですか。",
+    "translation": "What is this?",
+    "note": "Put か at the end of a polite question.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜から",
+    "meaning": "from / because",
+    "example": "ニューヨークから来ました。",
+    "reading": "ニューヨークからきました。",
+    "translation": "I came from New York.",
+    "note": "から can mark a starting point or reason.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜まで",
+    "meaning": "until / up to",
+    "example": "駅まで歩きます。",
+    "reading": "えきまであるきます。",
+    "translation": "I walk to the station.",
+    "note": "まで marks an endpoint.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ましょう",
+    "meaning": "let's do",
+    "example": "一緒に勉強しましょう。",
+    "reading": "いっしょにべんきょうしましょう。",
+    "translation": "Let's study together.",
+    "note": "Used to suggest doing something together.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ませんか",
+    "meaning": "Would you like to...?",
+    "example": "一緒にラーメンを食べませんか。",
+    "reading": "いっしょにラーメンをたべませんか。",
+    "translation": "Would you like to eat ramen together?",
+    "note": "A polite invitation.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜てください",
+    "meaning": "please do",
+    "example": "日本語で話してください。",
+    "reading": "にほんごではなしてください。",
+    "translation": "Please speak in Japanese.",
+    "note": "Use te-form + ください to make a polite request.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜てもいいです",
+    "meaning": "may do / it is okay to do",
+    "example": "ここで写真を撮ってもいいです。",
+    "reading": "ここでしゃしんをとってもいいです。",
+    "translation": "It is okay to take photos here.",
+    "note": "Use te-form + もいいです for permission.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜てはいけません",
+    "meaning": "must not do",
+    "example": "ここで食べてはいけません。",
+    "reading": "ここでたべてはいけません。",
+    "translation": "You must not eat here.",
+    "note": "Use te-form + はいけません to prohibit something.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜なければなりません",
+    "meaning": "must do",
+    "example": "勉強しなければなりません。",
+    "reading": "べんきょうしなければなりません。",
+    "translation": "I must study.",
+    "note": "A common way to say something is necessary.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜ながら",
+    "meaning": "while doing",
+    "example": "働きながら、日本語を勉強します。",
+    "reading": "はたらきながら、にほんごをべんきょうします。",
+    "translation": "I study Japanese while working.",
+    "note": "Used when doing two actions at the same time.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜のが好きです",
+    "meaning": "like doing",
+    "example": "日本語を話すのが好きです。",
+    "reading": "にほんごをはなすのがすきです。",
+    "translation": "I like speaking Japanese.",
+    "note": "Use verb dictionary form + の to turn an action into a noun-like idea.",
+    "jlpt": "N5"
+  },
+  {
+    "point": "〜より〜のほうが",
+    "meaning": "more than",
+    "example": "日本語は英語より難しいです。",
+    "reading": "にほんごはえいごよりむずかしいです。",
+    "translation": "Japanese is more difficult than English.",
+    "note": "より marks the thing being compared against.",
     "jlpt": "N5"
   }
 ]
