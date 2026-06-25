@@ -58,5 +58,185 @@
     "reading": "か / しょ",
     "meaning": "write",
     "example": "書く"
+  },
+  {
+    "kanji": "大",
+    "reading": "だい / おお",
+    "meaning": "big",
+    "example": "大きい"
+  },
+  {
+    "kanji": "小",
+    "reading": "しょう / ちい",
+    "meaning": "small",
+    "example": "小さい"
+  },
+  {
+    "kanji": "中",
+    "reading": "ちゅう / なか",
+    "meaning": "middle, inside",
+    "example": "中"
+  },
+  {
+    "kanji": "上",
+    "reading": "じょう / うえ",
+    "meaning": "up, above",
+    "example": "上"
+  },
+  {
+    "kanji": "下",
+    "reading": "か / した",
+    "meaning": "down, below",
+    "example": "下"
+  },
+  {
+    "kanji": "左",
+    "reading": "さ / ひだり",
+    "meaning": "left",
+    "example": "左"
+  },
+  {
+    "kanji": "右",
+    "reading": "う / みぎ",
+    "meaning": "right",
+    "example": "右"
+  },
+  {
+    "kanji": "前",
+    "reading": "ぜん / まえ",
+    "meaning": "before, front",
+    "example": "前"
+  },
+  {
+    "kanji": "後",
+    "reading": "ご / あと / うし",
+    "meaning": "after, behind",
+    "example": "後ろ"
+  },
+  {
+    "kanji": "山",
+    "reading": "さん / やま",
+    "meaning": "mountain",
+    "example": "山"
+  },
+  {
+    "kanji": "川",
+    "reading": "せん / かわ",
+    "meaning": "river",
+    "example": "川"
+  },
+  {
+    "kanji": "田",
+    "reading": "でん / た",
+    "meaning": "rice field",
+    "example": "田中"
+  },
+  {
+    "kanji": "火",
+    "reading": "か / ひ",
+    "meaning": "fire",
+    "example": "火曜日"
+  },
+  {
+    "kanji": "水",
+    "reading": "すい / みず",
+    "meaning": "water",
+    "example": "水曜日"
+  },
+  {
+    "kanji": "木",
+    "reading": "もく / き",
+    "meaning": "tree, wood",
+    "example": "木曜日"
+  },
+  {
+    "kanji": "金",
+    "reading": "きん / かね",
+    "meaning": "gold, money",
+    "example": "金曜日"
+  },
+  {
+    "kanji": "土",
+    "reading": "ど / つち",
+    "meaning": "earth, soil",
+    "example": "土曜日"
+  },
+  {
+    "kanji": "月",
+    "reading": "げつ / つき",
+    "meaning": "moon, month",
+    "example": "月曜日"
+  },
+  {
+    "kanji": "年",
+    "reading": "ねん / とし",
+    "meaning": "year",
+    "example": "今年"
+  },
+  {
+    "kanji": "時",
+    "reading": "じ / とき",
+    "meaning": "time, hour",
+    "example": "三時"
+  },
+  {
+    "kanji": "分",
+    "reading": "ふん / わ",
+    "meaning": "minute, part",
+    "example": "五分"
+  },
+  {
+    "kanji": "半",
+    "reading": "はん",
+    "meaning": "half",
+    "example": "七時半"
+  },
+  {
+    "kanji": "毎",
+    "reading": "まい",
+    "meaning": "every",
+    "example": "毎日"
+  },
+  {
+    "kanji": "今",
+    "reading": "こん / いま",
+    "meaning": "now",
+    "example": "今"
+  },
+  {
+    "kanji": "何",
+    "reading": "なに / なん",
+    "meaning": "what",
+    "example": "何"
+  },
+  {
+    "kanji": "友",
+    "reading": "ゆう / とも",
+    "meaning": "friend",
+    "example": "友達"
+  },
+  {
+    "kanji": "生",
+    "reading": "せい / い",
+    "meaning": "life, birth",
+    "example": "学生"
+  },
+  {
+    "kanji": "先",
+    "reading": "せん / さき",
+    "meaning": "previous, ahead",
+    "example": "先生"
+  },
+  {
+    "kanji": "学",
+    "reading": "がく / まな",
+    "meaning": "study, learning",
+    "example": "学校"
+  },
+  {
+    "kanji": "校",
+    "reading": "こう",
+    "meaning": "school",
+    "example": "学校"
   }
 ]
