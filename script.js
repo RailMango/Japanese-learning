@@ -5,6 +5,7 @@ let kanji = [];
 let current = "home";
 let flashcardIndex = 0;
 let showAnswer = false;
+let selectedVocabCategory = "categories";
 let sentenceChallenge = null;
 let showSentenceExample = false;
 
@@ -63,31 +64,29 @@ function getTagClass(type) {
 
 
 function createSakura(x, y) {
-  // Softer Sakura Touch: usually 1-2 petals, rarely 3.
-  const petals = Math.random() < 0.75 ? 1 + Math.floor(Math.random() * 2) : 3;
+  const petals = 3 + Math.floor(Math.random() * 2);
 
   for (let i = 0; i < petals; i++) {
     const petal = document.createElement("div");
     petal.className = "sakura-petal";
 
-    if (Math.random() > 0.55) {
-      petal.classList.add("alt");
-    }
+    if (Math.random() > 0.5) petal.classList.add("alt");
+    if (Math.random() > 0.65) petal.classList.add("tiny");
 
-    const size = 8 + Math.random() * 5;
-    const spreadX = (Math.random() * 90) - 45;
-    const fallY = 85 + Math.random() * 45;
-    const startRotation = Math.floor(Math.random() * 70) - 35;
-    const duration = 1700 + Math.random() * 800;
+    const size = 9 + Math.random() * 10;
+    const spreadX = (Math.random() * 150) - 75;
+    const fallY = 70 + Math.random() * 75;
+    const startRotation = Math.floor(Math.random() * 220) - 110;
+    const duration = 950 + Math.random() * 700;
 
-    petal.style.left = (x + (Math.random() * 10 - 5)) + "px";
-    petal.style.top = (y + (Math.random() * 8 - 4)) + "px";
+    petal.style.left = (x + (Math.random() * 18 - 9)) + "px";
+    petal.style.top = (y + (Math.random() * 12 - 6)) + "px";
     petal.style.setProperty("--size", size + "px");
     petal.style.setProperty("--x", spreadX + "px");
     petal.style.setProperty("--y", fallY + "px");
     petal.style.setProperty("--start-rot", startRotation + "deg");
     petal.style.setProperty("--duration", duration + "ms");
-    petal.style.animationDelay = (i * 120) + "ms";
+    petal.style.animationDelay = (i * 70) + "ms";
 
     document.body.appendChild(petal);
 
@@ -298,6 +297,89 @@ function revealSentenceExample() {
   render();
 }
 
+
+function getVocabCategoryInfo() {
+  return [
+    { key: "all", label: "All Vocabulary", icon: "📖", description: "Browse every N5 word currently in Mirai." },
+    { key: "noun", label: "Nouns", icon: "📦", description: "People, places, things, time, and ideas." },
+    { key: "verb", label: "Verbs", icon: "⚡", description: "Actions like eat, go, speak, read, and study." },
+    { key: "i-adjective", label: "i-Adjectives", icon: "🎨", description: "Describing words like big, fun, hot, and difficult." },
+    { key: "na-adjective", label: "na-Adjectives", icon: "💜", description: "Describing words like quiet, famous, and healthy." },
+    { key: "adverb", label: "Adverbs", icon: "💨", description: "Words like a little, a lot, more, and together." },
+    { key: "expression", label: "Expressions", icon: "💬", description: "Question words and useful set phrases." }
+  ];
+}
+
+function countVocabByType(type) {
+  if (type === "all") return vocab.length;
+  return vocab.filter(v => v.type === type).length;
+}
+
+function openVocabCategory(type) {
+  selectedVocabCategory = type;
+  document.getElementById("search").value = "";
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function backToVocabCategories() {
+  selectedVocabCategory = "categories";
+  document.getElementById("search").value = "";
+  render();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function renderVocabCategoryCards() {
+  const categories = getVocabCategoryInfo();
+
+  return `
+    <div class="card hero">
+      <h2>Vocabulary</h2>
+      <p>Choose a category. This keeps the vocabulary library clean as Mirai grows toward the full N5 word list.</p>
+    </div>
+
+    <div class="category-grid">
+      ${categories.map(cat => `
+        <button class="category-card" onclick="openVocabCategory('${cat.key}')">
+          <div class="category-icon">${cat.icon}</div>
+          <div>
+            <h2>${cat.label}</h2>
+            <p><b>${countVocabByType(cat.key)}</b> words</p>
+            <p class="small">${cat.description}</p>
+          </div>
+        </button>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderVocabularyPage(q) {
+  if (selectedVocabCategory === "categories") {
+    return renderVocabCategoryCards();
+  }
+
+  const categories = getVocabCategoryInfo();
+  const category = categories.find(cat => cat.key === selectedVocabCategory) || categories[0];
+
+  const baseList = selectedVocabCategory === "all"
+    ? vocab
+    : vocab.filter(v => v.type === selectedVocabCategory);
+
+  const filtered = baseList.filter(v =>
+    Object.values(v).join(" ").toLowerCase().includes(q)
+  );
+
+  return `
+    <div class="card hero">
+      <button onclick="backToVocabCategories()">← Back to Categories</button>
+      <h2>${category.icon} ${category.label}</h2>
+      <p><b>${filtered.length}</b> shown / <b>${baseList.length}</b> total</p>
+      <p class="small">${category.description}</p>
+    </div>
+    ${renderVocabCards(filtered)}
+  `;
+}
+
 function renderMission() {
   return `
     <div class="card hero">
@@ -401,8 +483,7 @@ function render() {
   if (current === "mission") content.innerHTML = renderMission();
 
   if (current === "vocab") {
-    const filtered = vocab.filter(v => Object.values(v).join(" ").toLowerCase().includes(q));
-    content.innerHTML = `<h2>Vocabulary</h2>${renderVocabCards(filtered)}`;
+    content.innerHTML = renderVocabularyPage(q);
   }
 
   if (current === "grammar") {
@@ -437,5 +518,5 @@ function render() {
 
 document.getElementById("search").style.display = "none";
 applySavedTheme();
-console.log("Mirai v0.3.5 Branding loaded");
+console.log("Mirai v0.4.0 Foundation loaded");
 loadData();
